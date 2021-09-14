@@ -1,3 +1,6 @@
+
+
+
 body{
   margin: 0;
   color : white;
@@ -105,8 +108,7 @@ margin: 0;
 display: flex;
 }
 
-.wrap    { 
--webkit-flex-wrap: wrap;
+.wrap    {
 flex-wrap: wrap;
 }  
 .wrap div{
@@ -134,8 +136,7 @@ text-align: center;
   display: flex;
 }
 
-.wrap    { 
-  -webkit-flex-wrap: wrap;
+.wrap    {
   flex-wrap: wrap;
 }  
 .wrap div{
@@ -155,10 +156,12 @@ text-align: center;
   text-align: center;
 }
 
-#services-firstchild div:nth-child(odd) {
-  background: #0c120d;
+
+.bg-bk , .bg-bk img{
+    background: #0c120d !important;;
   color : white ;
 }
+
 
 #services-page {
   display: flex;
@@ -208,9 +211,12 @@ text-align: center;
   text-align: left ;
 }
 .flex-item img{
-  padding-top: 30px
+  height: auto;
 }
 .apropos-content{
+  height: -webkit-max-content ;
+  height: -webkit-max-content ;
+  height: -webkit-max-content ;
   height: max-content ;
 }
 .apropos-description{
@@ -293,15 +299,16 @@ background-color: black;
 }
 #icons-container{
   position: relative;
-  height: 65%;
+  height: 65% ;
 
-  padding: 50px;
-  width: 200px;
+  padding: 50px ;
+  width: 200px ;
 }
 #icons-container img {
   display: flex ;
-  margin: auto;
-  padding: 10px;
+  margin: auto !important;
+  height: auto;
+  width: 49px;
 }
 #icons-container p {
   padding-left:  11%; 
@@ -417,8 +424,7 @@ margin: 0;
 display: flex;
 }
 
-.wrap    { 
--webkit-flex-wrap: wrap;
+.wrap    {
 flex-wrap: wrap;
 }  
 .wrap div{
@@ -446,8 +452,7 @@ text-align: center;
   display: flex;
 }
 
-.wrap    { 
-  -webkit-flex-wrap: wrap;
+.wrap    {
   flex-wrap: wrap;
 }  
 .wrap div{
@@ -468,7 +473,7 @@ text-align: center;
 }
 
 #services-firstchild div:nth-child(odd) {
-  background: #0c120d;
+  /*! background: #0c120d; */
   color : white ;
 }
 
@@ -520,9 +525,13 @@ text-align: center;
   text-align: left ;
 }
 .flex-item img{
-  padding-top: 30px
+  padding-top: 30px;
 }
+
 .apropos-content{
+  height: -webkit-max-content ;
+  height: -webkit-max-content ;
+  height: -webkit-max-content ;
   height: max-content ;
 }
 .apropos-description{
@@ -646,6 +655,9 @@ footer #footerLogo{
     width: 90px  ;
   
 }
+..gatsby-image-wrapper-constrained{
+  display: flex !important;
+}
 footer #footerNavIcons {
   display: flex; 
   justify-content: center ; 
@@ -658,4 +670,7 @@ footer #footerNavIcons {
 footer #footerNavIcons a {
    padding-left: 15px;
 }
+
+
+
 

@@ -10,6 +10,7 @@ import Footer from "../components/footer"
 import Services from "../components/Services"
 import Header from "../components/header"
 import Landingpage from "../components/Landing-page"
+import "../style/stlye.css"
 
 const IndexPage = () => (
     <>

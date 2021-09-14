@@ -1,10 +1,11 @@
 import React from 'react'
+import { StaticImage } from 'gatsby-plugin-image'
 
 export default function Contact() {
     return (
         <section id="contact-page">
         <div id="contact-header-photo">
-            <img src="Assets/img/contact-header.png" alt=""/>
+            <StaticImage src="../images/contact-header.png" alt=""/>
         </div>
         <div id="contact-aside-form-container">
             <div id="contact-form-container">
@@ -22,17 +23,17 @@ export default function Contact() {
             <aside>
                 <div id="contact-icons">
                     <div id="icons-container">
-                        <img src="Assets/img/contact-icon.png" alt=""/>
+                        <StaticImage src="../images//contact-icon.png" alt=""/>
+                        <p>sikisquare@gmail.com</p>
+                        <StaticImage src="../images//contact-icon.png" alt=""/>
                         <p>ikisquare@gmail.com</p>
-                        <img src="Assets/img/contact-icon.png" alt=""/>
-                        <p>ikisquare@gmail.com</p>
-                        <img src="Assets/img/contact-icon.png" alt=""/>
+                        <StaticImage src="../images//contact-icon.png" alt=""/>
                         <p>ikisquare@gmail.com</p>
                     </div>
                     <div id="social-media-icons">
-                        <img src="Assets/img/linkedin.png" alt=""/>
-                        <img src="Assets/img/linkedin.png" alt=""/>
-                        <img src="Assets/img/linkedin.png" alt=""/>
+                        <StaticImage src="../images/linkedin.png" alt="ccc"/>
+                        <StaticImage src="../images//linkedin.png" alt=""/>
+                        <StaticImage src="../images//linkedin.png" alt=""/>
                     </div>
                 </div>
             </aside>
