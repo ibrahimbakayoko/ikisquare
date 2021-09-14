@@ -1,5 +1,26 @@
-import React from "react"
+import * as React from "react" /*
+import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
-export default function Home() {
-  return <div>Hello world!</div>
-}
+import Layout from "../components/layout"
+import Seo from "../components/seo" */
+import Apropos from "../components/Apropos"
+import Contact from "../components/Contact"
+import Footer from "../components/footer"
+import Services from "../components/Services"
+import Header from "../components/header"
+import Landingpage from "../components/Landing-page"
+
+const IndexPage = () => (
+    <>
+        <Header  />
+        <Landingpage/>
+        <Services/>
+        <Apropos/>
+        <Contact/>
+        <Footer/>
+    </>
+
+)
+
+export default IndexPage
