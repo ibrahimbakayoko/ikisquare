@@ -5,18 +5,16 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const Header = ({ siteTitle }) => (
   <header>
-  <div id="HeaderLogo">
-  <StaticImage
-      src="../images/logo.png"
-  
-      alt="A Gatsby astronaut"
-    />  </div>
-  <nav id="HeaderNavLinks">
-          <a href="#">Acceuil</a>
-          <a href="#">A propos</a>
-          <a href="#">Services</a>
-          <a href="#" id="contact-button">Contact</a>
-  </nav>
+    <div id="Header-container">
+        <div id="HeaderLogo">
+        <StaticImage   src="../images/logo.png"    alt="A Gatsby astronaut" />  </div>
+        <nav id="HeaderNavLinks">
+                <a href="#">Acceuil</a>
+                <a href="#">A propos</a>
+                <a href="#">Services</a>
+                <a href="#" id="contact-button">Contact</a>
+        </nav>
+    </div>
 </header>
 )
 

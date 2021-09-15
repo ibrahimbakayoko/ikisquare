@@ -2,45 +2,14 @@
 
 
 
+
+
+
 body{
   margin: 0;
   color : white;
   font-family: 'Roboto', sans-serif;
 }
-header{
-  display: flex;
-   background-color: black;
-  width: 100%;
-  align-content: end;
-}
-
-header #HeaderLogo{
-  float: left ; 
-    margin-left: 130px;
-  margin-top: 38px ;
-    width: 90px  ;
-  
-}
-header #HeaderNavLinks {
-    display: flex; 
-  justify-content: center ; 
-  width: 40%;
-  align-items: center;
-  margin-left : auto;
-}
-
-header #HeaderNavLinks a {
-margin-left: 80px;
-        color : white ;
-        font-size: 18px;
-        text-decoration: none;
-}
-header #HeaderNavLinks #contact-button {
-background-color: #007A7A;
-  padding: 20px;
-
-}
-
 #page-acceuill {
 display: flex ;
 flex-direction: column;
@@ -81,25 +50,7 @@ padding: 10px;
 .tags{
   color :#007A7A;
 }
-#blog {
-  display: flex;
-  flex-wrap: wrap;
-flex-direction: row;
-margin:  auto ;
-margin-top : 100px;
-width: 100%;
-justify-content: space-around;
-}
-#blog article {
-  width: 250px;
-text-align: left ;
-background-color: black ;
-padding: 30px
-}
-#blog article:first-child , #blog article:nth-child(3)  {
 
-background-color:#007A7A ;
-}
 
 
 /*SECTION SERVICES */
@@ -219,6 +170,9 @@ text-align: center;
   height: -webkit-max-content ;
   height: -webkit-max-content ;
   height: -webkit-max-content ;
+  height: -webkit-max-content ;
+  height: -webkit-max-content ;
+  height: -webkit-max-content ;
   height: max-content ;
 }
 .apropos-description{
@@ -332,13 +286,7 @@ header{
   align-content: end;
 }
 
-header #HeaderLogo{
-  float: left ; 
-    margin-left: 130px;
-  margin-top: 38px ;
-    width: 90px  ;
-  
-}
+
 header #HeaderNavLinks {
     display: flex; 
   justify-content: center ; 
@@ -347,12 +295,7 @@ header #HeaderNavLinks {
   margin-left : auto;
 }
 
-header #HeaderNavLinks a {
-margin-left: 80px;
-        color : white ;
-        font-size: 18px;
-        text-decoration: none;
-}
+
 header #HeaderNavLinks #contact-button {
 background-color: #007A7A;
   padding: 20px;
@@ -536,6 +479,9 @@ text-align: center;
   height: -webkit-max-content ;
   height: -webkit-max-content ;
   height: -webkit-max-content ;
+  height: -webkit-max-content ;
+  height: -webkit-max-content ;
+  height: -webkit-max-content ;
   height: max-content ;
 }
 .apropos-description{
@@ -692,3 +638,72 @@ footer #footerNavIcons a {
 .landingPage { 
   max-width: 100%;
 }
+#blog {
+  display: flex;
+  flex-wrap: wrap;
+flex-direction: row;
+margin:  auto ;
+margin-top : 100px;
+width: 100%;
+max-width: 1600px ;
+
+justify-content: space-around;
+}
+
+#blog article {
+  width: 250px;
+text-align: left ;
+background-color: black ;
+padding: 30px
+}
+#blog article:first-child , #blog article:nth-child(3)  {
+
+background-color:#007A7A ;
+}
+
+header{
+  display: flex;
+   background-color: black;
+  width: 100%;
+  align-content: end;
+}
+
+header #Header-container #HeaderLogo{
+  float: left ; 
+  margin-top: 38px ;
+    width: 90px  ;
+  margin-left: 0; 
+}
+header #Header-container #HeaderNavLinks {
+    display: flex; 
+  justify-content: center ; 
+  width: 40%;
+  align-items: center;
+  margin-left : auto;
+}
+
+header #Header-container #HeaderNavLinks a {
+        color : white ;
+        font-size: 18px;
+        text-decoration: none;
+}
+header #Header-container #HeaderNavLinks #contact-button {
+background-color: #007A7A;
+  padding: 20px;
+
+}
+
+header #Header-container{
+  margin: auto ;
+  width: 82% ;
+  max-width: 1600px ;
+  display:  inherit;
+}
+
+header #HeaderNavLinks a {
+  margin-left: 80px;
+          color : white ;
+          font-size: 18px;
+          padding: 10px;
+          text-decoration: none;
+  }
