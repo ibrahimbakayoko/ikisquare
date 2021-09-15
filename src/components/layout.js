@@ -9,9 +9,9 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Footer from "./Footer"
-
 import Header from "./header"
-
+import "../style/stlye.css"
+import Landingpage from "./Landing-page"
 
 const Layout = ({ children }) => {
  
@@ -19,12 +19,14 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header  />
-
-        <main>{children}</main>
-        <Footer/>
+      <div className="landingPage">
+         <Landingpage/>
+      </div>
+        <main className="layout">{children}</main>
+      <Footer/>
          
      
-        
+
     </>
   )
 }

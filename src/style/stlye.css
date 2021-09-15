@@ -1,6 +1,7 @@
 
 
 
+
 body{
   margin: 0;
   color : white;
@@ -214,6 +215,7 @@ text-align: center;
   height: auto;
 }
 .apropos-content{
+  height: -webkit-max-content ;
   height: -webkit-max-content ;
   height: -webkit-max-content ;
   height: -webkit-max-content ;
@@ -533,6 +535,7 @@ text-align: center;
   height: -webkit-max-content ;
   height: -webkit-max-content ;
   height: -webkit-max-content ;
+  height: -webkit-max-content ;
   height: max-content ;
 }
 .apropos-description{
@@ -676,4 +679,16 @@ footer #footerNavIcons a {
 .gatsby-image-wrapper-constrained {
   
   vertical-align: top;
+}
+
+.social-media-icons{
+  margin-left: 20px; 
+}
+.layout {
+  max-width: 1600px;
+  margin: 0 auto;
+
+}
+.landingPage { 
+  max-width: 100%;
 }

@@ -38,9 +38,9 @@ export default function Contact() {
                         <p>ikisquare@gmail.com</p>
                     </div>
                     <div id="social-media-icons">
-                        <StaticImage src="../images/linkedin.png" alt="ccc"/>
-                        <StaticImage src="../images//linkedin.png" alt=""/>
-                        <StaticImage src="../images//linkedin.png" alt=""/>
+                        <StaticImage src="../images/linkedin.png" class="social-media-icons" alt=""/>
+                        <StaticImage src="../images//linkedin.png" class="social-media-icons" alt=""/>
+                        <StaticImage src="../images//linkedin.png" class="social-media-icons" alt=""/>
                     </div>
                 </div>
             </aside>
