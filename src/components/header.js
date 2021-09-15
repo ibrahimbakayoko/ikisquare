@@ -10,7 +10,7 @@ const Header = ({ siteTitle }) => (
         <StaticImage   src="../images/logo.png"    alt="A Gatsby astronaut" />  </div>
         <nav id="HeaderNavLinks">
                 <a href="#">Acceuil</a>
-                <a href="#">A propos</a>
+                <a href="#"><p>A propos</p> </a>
                 <a href="#">Services</a>
                 <a href="#" id="contact-button">Contact</a>
         </nav>

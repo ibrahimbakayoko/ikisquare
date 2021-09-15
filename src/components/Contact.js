@@ -30,8 +30,8 @@ export default function Contact() {
             <aside>
                 <div id="contact-icons">
                     <div id="icons-container">
-                        <StaticImage src="../images//contact-icon.png" alt=""/>
-                        <p>sikisquare@gmail.com</p>
+                        <StaticImage src="../images/Group.png" alt=""/>
+                        <p>01234567891345678</p>
                         <StaticImage src="../images//contact-icon.png" alt=""/>
                         <p>ikisquare@gmail.com</p>
                         <StaticImage src="../images//contact-icon.png" alt=""/>
@@ -39,8 +39,8 @@ export default function Contact() {
                     </div>
                     <div id="social-media-icons">
                         <StaticImage src="../images/linkedin.png" class="social-media-icons" alt=""/>
-                        <StaticImage src="../images//linkedin.png" class="social-media-icons" alt=""/>
-                        <StaticImage src="../images//linkedin.png" class="social-media-icons" alt=""/>
+                        <StaticImage src="../images/instagram.png" class="social-media-icons" alt=""/>
+                        <StaticImage src="../images/facebook 1.png" class="social-media-icons" alt=""/>
                     </div>
                 </div>
             </aside>
