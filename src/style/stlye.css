@@ -300,7 +300,8 @@ background-color: black;
 #icons-container{
   position: relative;
   height: 65% ;
-
+  display: flex;
+  flex-direction: column;
   padding: 50px ;
   width: 200px ;
 }
@@ -556,6 +557,7 @@ text-align: center;
 
 }
 #contact-header-photo img {
+  display: flex;
   height: 200px;
   width: 100%;
 }
@@ -655,9 +657,7 @@ footer #footerLogo{
     width: 90px  ;
   
 }
-..gatsby-image-wrapper-constrained{
-  display: flex !important;
-}
+
 footer #footerNavIcons {
   display: flex; 
   justify-content: center ; 
@@ -673,4 +673,7 @@ footer #footerNavIcons a {
 
 
 
-
+.gatsby-image-wrapper-constrained {
+  
+  vertical-align: top;
+}
