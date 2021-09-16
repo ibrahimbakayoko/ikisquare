@@ -8,9 +8,9 @@ export default function Footer() {
             <StaticImage src="../images/logoFooter.png" alt=""/>
         </div>
         <nav id="footerNavIcons">
-                <a href="#"><StaticImage src="../images/linkedin.png" alt="ss"/></a>
-                <a href="#"><StaticImage src="../images/instagram.png" alt="xx"/></a>
-                <a href="#"><StaticImage src="../images/facebook 1.png" alt="vv"/></a>
+                <a href="linkedin.com"><StaticImage src="../images/linkedin.png" alt="ss"/></a>
+                <a href="linkedin.com"><StaticImage src="../images/instagram.png" alt="xx"/></a>
+                <a href="linkedin.com"><StaticImage src="../images/facebook 1.png" alt="vv"/></a>
 
         </nav>
     </footer>

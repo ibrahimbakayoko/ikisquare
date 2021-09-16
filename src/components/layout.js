@@ -6,8 +6,8 @@
  */
 
 import * as React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+// import PropTypes from "prop-types"
+// import { useStaticQuery, graphql } from "gatsby"
 import Footer from "./Footer"
 import Header from "./header"
 import "../style/stlye.css"
@@ -22,10 +22,8 @@ const Layout = ({ children }) => {
       <div className="landingPage">
          <Landingpage/>
       </div>
-        <main className="layout">{children}</main>
-      <Footer/>
-         
-     
+      <div className="layout">{children}</div>
+      <Footer/> 
 
     </>
   )

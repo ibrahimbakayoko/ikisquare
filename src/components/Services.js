@@ -23,9 +23,7 @@ export default function Services() {
                         <p class="services-titles">UX design</p>
                         <p class="services-description sections-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit suspendisse amet, hendrerit sed turpis commodo, nulla amet, quisque.</p>
                     </div>
-            
-                </div>
-                <div class="services flex-container wrap">
+                    {/* ajout ligne */}
                     <div class="flex-item">
                         <StaticImage src="../images/services/ecopense.png" alt="services-con"/>
                         <p class="services-titles">UX design</p>
@@ -41,7 +39,11 @@ export default function Services() {
                         <p class="services-titles">UX design</p>
                         <p class="services-description sections-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit suspendisse amet, hendrerit sed turpis commodo, nulla amet, quisque.</p>
                     </div>
+            
                 </div>
+                {/* <div class="services flex-container wrap">
+               
+                </div> */}
             </div>
         </section>
     )

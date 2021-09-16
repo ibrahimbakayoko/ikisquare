@@ -9,10 +9,10 @@ const Header = ({ siteTitle }) => (
         <div id="HeaderLogo">
         <StaticImage   src="../images/logo.png"    alt="A Gatsby astronaut" />  </div>
         <nav id="HeaderNavLinks">
-                <a href="#">Acceuil</a>
-                <a href="#"><p>A propos</p> </a>
-                <a href="#">Services</a>
-                <a href="#" id="contact-button">Contact</a>
+                <Link to="/">Acceuil</Link>
+                <Link to="/"><p>A propos</p> </Link>
+                <Link to="/">Services</Link>
+                <Link to="/" id="contact-button">Contact</Link>
         </nav>
     </div>
 </header>
