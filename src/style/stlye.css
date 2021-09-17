@@ -6,15 +6,24 @@ body{
   color : white;
   font-family: 'Roboto', sans-serif;
 }
+.gatsby-image-wrapper-constrained {
+  
+  vertical-align: top;
+}
+.layout {
+  max-width: 1600px;
+  margin: 0 auto;
+
+}
 
 
-#ikisquare p:nth-child(2){
-  font-weight: 300;
-  font-size: 30px;
-}
-.tags{
-  color :#007A7A;
-}
+
+
+
+
+
+
+
 
 
 
@@ -23,11 +32,32 @@ body{
 /*A PROPOS*/
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .apropos-description{
   padding-bottom: 40px;
   border-left:  2px solid  #007A7A;
 }
 
+#apropos-page{
+  background-color:   #E5E5E5;
+  display: flex;
+  justify-content: end;
+  padding-bottom: 80px;
+}
 #apropos-page{
   background-color:   #E5E5E5;
   display: flex;
@@ -45,20 +75,6 @@ body{
    padding: 30px 60px ;
   text-align: left ;
 }
-
-
-
-.apropos-description{
-  padding-bottom: 40px;
-  border-left:  2px solid  #007A7A;
-}
-#apropos-page{
-  background-color:   #E5E5E5;
-  display: flex;
-  justify-content: end;
-  padding-bottom: 80px;
-}
-
 .apropos-title{
   font-size: 30px;
   color : #007A7A;
@@ -67,32 +83,63 @@ body{
   text-align: left ;
 }
 
-
-
-.bottomright {
-  background-color: #fff;
-  width: 124px;
-  height: 124px;
-  bottom: 113px;
-  left: 238px;
-  position: relative;
-  z-index: -1;
+.apropos-description{
+  padding-bottom: 40px;
+  border-left:  2px solid  #007A7A;
 }
 
-.topleft {
-  background-color: #007A7A;
-  width: 124px;
-  height: 124px;
-  top: 169px;
-  left: -10px;
-  position: relative;
-  z-index: -1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*PAGE Acceuill*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+.landingPage { 
+  max-width: 100%;
+}
+
+
+#blog article:first-child , #blog article:nth-child(3)  {
+
+background-color:#007A7A ;
 }
 
 #ikisquare p:nth-child(2){
   font-weight: 300;
+  margin-top: 0px;
   font-size: 30px;
 }
+.tags{
+  color :#007A7A;
+}
+
+
+
+
 .tags{
   color :#007A7A;
 }
@@ -102,7 +149,8 @@ flex-wrap: wrap;
 flex-direction: row;
 margin:  auto ;
 /* margin-top : 100px; */
-width: 100%;
+width: 85%;
+max-width: 85%;
 justify-content: space-around;
 }
 
@@ -120,52 +168,51 @@ background-color:#007A7A ;
 }
 
 
-/*END SECTION SERVICES */
-
-
-.gatsby-image-wrapper-constrained {
-  
-  vertical-align: top;
-}
-
-.social-media-icons{
-  margin-left: 20px; 
-}
-.layout {
-  max-width: 1600px;
-  margin: 0 auto;
-
-}
-
-
-/*PAGE Acceuill*/
-.landingPage { 
-  max-width: 100%;
-}
-
-
-#blog article:first-child , #blog article:nth-child(3)  {
-
-background-color:#007A7A ;
-}
-
-
 .article-title{
   font-family: 'Roboto', sans-serif;
   font-size:  20px ;
     font-weight: 500 ;
 }
+.container-ikisquare{
+  width: 420px;
+  margin:0 auto;
+  z-index: 0;
+}
+.topleft {
+  background-color: #007A7A;
+  width: 124px;
+  height: 124px;
+  top: 134px;
+  left: -10px;
+  position: relative;
+  z-index: -1;
+}
+#ikisquare p:first-child {
+ padding-top : 10px  !important ;
+ padding-bottom: 0px;
+letter-spacing: 4px;
+}
 #page-acceuill #ikisquare{
   position: inherit;
-  display:  inherit ;
+  display:  flex ;
   flex-direction: column;  
-   align-items: center;
    background-color: #121212 ; 
-  min-width: 39%;
+  min-width: 49%;
     margin : auto;
-    margin-top : 55px;
+    align-items: center;
+  padding-top: 10px;
+    margin-top : 20px;
   font-size: 45px;
-  height: 350px;
+  height: 380px;
+  }
+  .bottomright {
+    background-color: #fff;
+    width: 124px;
+    height: 124px;
+    bottom: 113px;
+    left: 309px;
+    position: relative;
+    z-index: -1;
   }
   #page-acceuill {
     display: flex ;
@@ -185,18 +232,39 @@ background-color:#007A7A ;
     color: white;
     font-size: 20px;
     padding: 10px;
-    
+    margin-top : 30px
     }
   
-  .container-ikisquare{
-    width: 350px;
-    margin:0 auto;
-    z-index: 0;
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   /*header*/
   
+
+
+
+
+
+
+
+
+
+
+
+
+
 header #Header-container{
   margin: auto ;
   width: 82% ;
@@ -237,7 +305,8 @@ header #HeaderNavLinks {
 
 header #HeaderNavLinks #contact-button {
 background-color: #007A7A;
-  padding: 20px;
+padding: 15px 32px !important;
+border-radius: 2px;
 
 }
 header{
@@ -266,13 +335,34 @@ header #Header-container #HeaderNavLinks a {
         font-size: 18px;
         text-decoration: none;
 }
-header #Header-container #HeaderNavLinks #contact-button {
-background-color: #007A7A;
-  padding: 20px;
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*contact page*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 #contact-page {
   color: #000000;
@@ -316,7 +406,9 @@ padding: 5% 10%;
 #contact-form-container{
 padding: 3.5% 10%;
 }
-
+.social-media-icons{
+  margin-left: 20px; 
+}
 
 #contact-page > #contact-aside-form-container > #contact-form-container > #contact-form > #contact-form-button {
   background-color: #007A7A !important;
@@ -398,9 +490,30 @@ background-color: black;
   padding-bottom:   5%; 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 /*FOOTER
-CSS FOOTER
 */
+
+
+
+
+
+
+
+
+
+
 
 footer{
   display: flex;
@@ -429,7 +542,38 @@ footer #footerNavIcons a {
    padding-left: 15px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*SERVICES PAGE*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .bg-bk , .bg-bk img{
@@ -478,7 +622,36 @@ color : white ;
   width: 80%;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* SERVICES + A PROPOS */
+
+
+
+
+
+
+
+
+
+
+
+
+
 .sections-title{
   margin-bottom:  50px; 
   color : black ; 
