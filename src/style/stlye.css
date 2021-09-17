@@ -588,15 +588,10 @@ color : white ;
   width: 100%;
 }
 
-.services:last-child div:nth-child(2) {
-  background: #0c120d;
-  color : white ;
 
-}
 #services-page-content{
   position: relative ; 
-  padding: 50px 50px; 
-  width: 80%;
+  
 }
 
 #services-firstchild div:nth-child(odd) {
@@ -611,15 +606,14 @@ color : white ;
   width: 100%;
 }
 
-.services:last-child div:nth-child(2) {
-  background: #0c120d;
-  color : white ;
+.services:last-child div:nth-child(even) {
+  background: #ffffff;
+  color : rgb(8, 6, 6) ;
 
 }
 #services-page-content{
   position: relative ; 
-  padding: 50px 50px; 
-  width: 80%;
+
 }
 
 
@@ -669,17 +663,9 @@ color : white ;
   background:#FCFCFC;
   color : black;
 }
-  .wrap div{
-  background: gold;
-  }
-
-.flex-container {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: row;
   
-  }
+
+
 
  
   .sections-description{
@@ -696,11 +682,21 @@ color : white ;
 }
 .flex-item {
   padding: 5px;
-  width: 285px;
-  /* height: 450px; */
+  min-height: 400px; 
   line-height: 30px;
   color: white;
   font-weight: bold;
   font-size: 15px;
+  flex-wrap: wrap;
+  min-width: 300px;
+  flex: 0 0 30% !important;
   text-align: center;
 }
+.flex-container {
+  padding: 7% 10%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
