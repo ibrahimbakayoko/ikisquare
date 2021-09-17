@@ -55,13 +55,11 @@ body{
 #apropos-page{
   background-color:   #E5E5E5;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   padding-bottom: 80px;
 }
 #apropos-page{
-  background-color:   #E5E5E5;
   display: flex;
-  justify-content: end;
   padding-bottom: 80px;
 }
 #apropos-page-content {
@@ -82,12 +80,17 @@ body{
    padding: 30px 60px ;
   text-align: left ;
 }
+.apropos-content {
+  flex: 0 0 31% !important ;
 
+}
 .apropos-description{
   padding-bottom: 40px;
   border-left:  2px solid  #007A7A;
 }
-
+.apropos {
+  padding: 0px !important;
+}
 
 
 
@@ -398,14 +401,20 @@ header #Header-container #HeaderNavLinks a {
 /*corriger*/
 #contact-page #contact-aside-form-container #contact-form-container{
   display: inherit ; 
+  flex-wrap: wrap;
   flex-direction: column ;
-  width: 70%;
-padding: 5% 10%;
+  padding: 5% 10%;
+  width: 60%;
+  height: max-content;
+  font-size: 20px;
+  min-width: 500px;
+  overflow-wrap: break-word;
+}
+#contact-description{
+  padding-right: 20%;
 }
 /*corriger*/
-#contact-form-container{
-padding: 3.5% 10%;
-}
+
 .social-media-icons{
   margin-left: 20px; 
 }
@@ -427,10 +436,13 @@ padding: 3.5% 10%;
 #contact-page > #contact-aside-form-container > #contact-form-container > #contact-form > input , #contact-form textarea{
   border: none ; 
   border-bottom: 1px solid black   ;
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
 }
 #contact-form input , #contact-form button , #contact-form textarea {
-  width: 60%;
-  margin-top: 20px
+  width: 70%;
+  margin-top: 20px;
+
 }
 #contact-form button {
   border:  none ; 
@@ -441,16 +453,15 @@ padding: 3.5% 10%;
 
 /*il faut corriger*/
 #contact-page > #contact-aside-form-container > aside > #contact-icons{
-   position: absolute ;
-  right:  2% ;
-display: flex;
-background-color: black;
+   position: relative ;
+  left:  -50% ;
+  display: flex;
+  background-color: black;
   flex-direction: column ;
-  justify-content: center ;
-  margin-top:  6% ;
+  margin-top:  30% ;
   align-items:  center; 
- height: 54%;
-  width: 500px;
+  height: 60%;
+  width: 600px;
   color : white ;
  
 }
@@ -587,7 +598,11 @@ color : white ;
   justify-content: end ;
   width: 100%;
 }
-
+#service-title{
+  margin-left: 12.5%;
+margin-bottom: 0;
+margin-top: 5%;
+}
 
 #services-page-content{
   position: relative ; 
@@ -660,12 +675,8 @@ color : white ;
   flex-wrap: wrap;
 }  
 .wrap div{
-  background:#FCFCFC;
   color : black;
 }
-  
-
-
 
  
   .sections-description{
@@ -689,7 +700,7 @@ color : white ;
   font-size: 15px;
   flex-wrap: wrap;
   min-width: 300px;
-  flex: 0 0 30% !important;
+  flex: 0 0 30% ;
   text-align: center;
 }
 .flex-container {
@@ -699,4 +710,26 @@ color : white ;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  }
+
+  @media only screen and (max-width: 810px) {
+    #contact-aside-form-container{
+      display: block !important;
+    }
+    #contact-page > #contact-aside-form-container > aside {
+      display: flex !important;
+      background-color: #007A7A;
+      width: 100% !important;
+    }
+    #contact-page > #contact-aside-form-container > aside > #contact-icons{
+     display: flex;
+     width: 100%;  
+   }
+   #contact-page #contact-aside-form-container #contact-form-container{
+    display: block !important ; 
+    width: 100% !important;
+    min-width: 500px;
+    overflow-wrap: break-word;
+  }
+
   }

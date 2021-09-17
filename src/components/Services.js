@@ -4,7 +4,7 @@ export default function Services() {
     return (
         <section id="services-page">
             <div id="services-page-content">
-                <h1 class="sections-title">SERVICES</h1>
+                <h1 class="sections-title" id="service-title">SERVICES</h1>
                 <div class="services flex-container wrap"  id="services-firstchild">
                     <div class="bg-bk flex-item">
                         <StaticImage src="../images/services-1.png" alt="services-con"
