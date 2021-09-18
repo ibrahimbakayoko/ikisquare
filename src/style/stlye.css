@@ -11,7 +11,7 @@ body{
   vertical-align: top;
 }
 .layout {
-  max-width: 1600px;
+  max-width: 100%;
   margin: 0 auto;
 
 }
@@ -175,6 +175,14 @@ background-color:#007A7A ;
   font-family: 'Roboto', sans-serif;
   font-size:  20px ;
     font-weight: 500 ;
+    padding-bottom: 20px;
+}
+.article-title::before{
+  content: "";
+  width: 55px;
+  border-bottom: 3px solid rgb(233, 233, 233);
+  height: 35px;
+  position: absolute;
 }
 .container-ikisquare{
   width: 420px;
@@ -225,7 +233,7 @@ letter-spacing: 4px;
     
     }
     
-    #page-acceuill #ikisquare button {
+    #page-acceuill #ikisquare #ikisquare-button {
      font-family: 'Roboto', sans-serif;
     
       border: 3px solid #007A7A;
@@ -235,9 +243,14 @@ letter-spacing: 4px;
     color: white;
     font-size: 20px;
     padding: 10px;
+    text-decoration: none;
     margin-top : 30px
     }
-  
+    #page-acceuill #ikisquare #ikisquare-button:hover {
+      background-color:  #007A7A;
+      color: white;
+      cursor: pointer;
+    }
 
 
 
@@ -274,7 +287,12 @@ header #Header-container{
   max-width: 1600px ;
   display:  inherit;
 }
-
+.sticky {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 header #HeaderNavLinks a {
   margin-left: 80px;
           color : white ;
@@ -282,6 +300,15 @@ header #HeaderNavLinks a {
           padding: 10px;
           text-decoration: none;
   }
+  header #HeaderNavLinks .navLinks:nth-child(odd):hover ,header #HeaderNavLinks .navLinks p:hover  {
+            color : #007A7A !important;
+            border-bottom: 2px solid #007A7A ;       
+    }
+ 
+    header #HeaderNavLinks #contact-button:hover {
+      color : #007A7A !important;    
+      background-color: wheat;   
+}
 header #HeaderNavLinks  a p {
          display: block ruby;
          padding: 10px;
@@ -291,19 +318,14 @@ header #HeaderNavLinks  a p {
 
 header{
   display: flex;
+  scroll-behavior: auto;
    background-color: black;
   width: 100%;
   align-content: end;
 }
 
 
-header #HeaderNavLinks {
-    display: flex; 
-  justify-content: center ; 
-  width: 40%;
-  align-items: center;
-  margin-left : auto;
-}
+
 
 
 header #HeaderNavLinks #contact-button {
@@ -318,6 +340,9 @@ header{
   width: 100%;
   align-content: end;
 }
+ #Header-container .openMenu {
+  display: none !important;
+}
 
 header #Header-container #HeaderLogo{
   float: left ; 
@@ -325,6 +350,7 @@ header #Header-container #HeaderLogo{
     width: 90px  ;
   margin-left: 0; 
 }
+@media only screen and (min-width: 930px){
 header #Header-container #HeaderNavLinks {
     display: flex; 
   justify-content: center ; 
@@ -332,7 +358,10 @@ header #Header-container #HeaderNavLinks {
   align-items: center;
   margin-left : auto;
 }
-
+.closeMenu {
+  display: none;
+}
+}
 header #Header-container #HeaderNavLinks a {
         color : white ;
         font-size: 18px;
@@ -731,5 +760,31 @@ margin-top: 5%;
     min-width: 500px;
     overflow-wrap: break-word;
   }
-
+ }
+  @media only screen and (max-width: 930px){
+     
+    #Header-container .openMenu {
+      display:  block !important;
+      position: fixed;
+      right: 4%;
+      top : 3%;
+    }
+  
+    .openMenu{
+      cursor: pointer !important;
+    }
+    header #HeaderNavLinks {
+      display: none ;
+      position: fixed !important;
+      top : 0;
+      left : 0;
+      width: 100% !important;
+      right : 0;
+      justify-content: center !important;
+      height: 100vh;
+      z-index: 999;
+      flex-direction: column;
+      align-items: center;
+      background: #000;
+  }
   }

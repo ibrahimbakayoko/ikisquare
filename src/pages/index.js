@@ -13,18 +13,23 @@ import Services from "../components/Services"
 import "../style/stlye.css"
 import Layout from "../components/layout"
 
-const IndexPage = () => (
-    <>
 
 
-    <Layout>
-        <Services/>
-        <Apropos/>
-        <Contact/>
-    </Layout>
-        
-    </>
+export default function index() {
+   
 
-)
+    return (
+        <>
 
-export default IndexPage
+
+        <Layout>
+            <Services/>
+            <Apropos/>
+            <Contact/>
+        </Layout>
+            
+        </>
+    )
+}
+
+
