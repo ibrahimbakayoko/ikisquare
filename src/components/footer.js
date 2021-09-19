@@ -6,7 +6,7 @@ export default function Footer() {
     return (
     <footer id="footer">
         <div id="footerLogo">
-            <StaticImage src="../images/logoFooter.png" alt=""/>
+            <StaticImage src="../images/logoFooter.png"  alt=""/>
         </div>
         <p id="cpyright">
             IKISQUARE &copy;2021

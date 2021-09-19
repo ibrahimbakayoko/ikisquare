@@ -347,9 +347,7 @@ header #Header-container #HeaderNavLinks {
   align-items: center;
   margin-left : auto;
 }
-.closeMenu {
-  display: none;
-}
+
 }
 header #Header-container #HeaderNavLinks a {
         color : white ;
@@ -573,7 +571,7 @@ footer{
 #cpyright{
   display: flex;
   color: #000;
-  font-size: x-large;
+  font-size: 19px;
 }
 footer #footerLogo{
   float: left ; 
@@ -748,7 +746,7 @@ margin-top: 5%;
   line-height: 30px;
   color: white;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 17px;
   flex-wrap: wrap;
   min-width: 300px;
   flex: 0 0 30% ;
@@ -807,6 +805,15 @@ margin-top: 5%;
       right: 4%;
       top : 3%;
     }
+    footer #footerLogo{
+    
+        width: 70px  ;
+    }
+    
+    header #HeaderNavLinks a {
+      margin-left: 0px;
+           
+      }
     .sections-description{
      padding: 0px 30px ;
    }
