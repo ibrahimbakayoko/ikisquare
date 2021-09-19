@@ -38,7 +38,7 @@ export default function Contact() {
                     <input type="text" class="form-input" name="user_name" placeholder="Entre votre nom" size="2"/>
                     <input type="email" class="form-input" name="user_email" placeholder="Entre votre Email"/>
                     <textarea name="" id="" cols="30" rows="10" name="message" placeholder="Entre votre message" ></textarea>
-                    <input type="submit" id="contact-form-button" value="Envoyer" />
+                    <input type="submit" className="btn-grad" id="contact-form-button" value="Envoyer" />
                 </form>
             </div>
             <aside>

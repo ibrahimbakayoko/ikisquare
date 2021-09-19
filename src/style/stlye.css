@@ -445,20 +445,24 @@ header #Header-container #HeaderNavLinks a {
 }
 
 #contact-page > #contact-aside-form-container > #contact-form-container > #contact-form > #contact-form-button {
-  background-color: #007A7A !important;
+  background-image: linear-gradient(to right, #045353 0%, #0caaaa  51%, #007A7A  100%) ;
   border:  none ; 
-  color : white ;
+  color: white;            
+  border-radius: 2px;
   font-size: medium;
   padding: 10px ;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+
 }
 #contact-page > #contact-aside-form-container > #contact-form-container > #contact-form > #contact-form-button:hover {
-  background-color: #ffffff !important;
-  border:  none ; 
-  color : #007A7A ;
-  border: 1px solid #007A7A;
-  cursor: pointer;
+  background-position: right center; /* change the direction of the change here */
+   color: #fff !important;
+   text-decoration: none;
+   cursor: pointer;
 }
-
 
 
 #contact-page > #contact-aside-form-container > aside {
