@@ -9,13 +9,12 @@ export default function Footer() {
             <StaticImage src="../images/logoFooter.png" alt=""/>
         </div>
         <p id="cpyright">
-              &copy;ikisquare 2021
+            IKISQUARE &copy;2021
         </p>
         <nav id="footerNavIcons">
                 <a href="linkedin.com"><StaticImage src="../images/linkedin.png" alt="ss"/></a>
                 <a href="linkedin.com"><StaticImage src="../images/instagram.png" alt="xx"/></a>
                 <a href="linkedin.com"><StaticImage src="../images/facebook 1.png" alt="vv"/></a>
-
         </nav>
     </footer>
     )

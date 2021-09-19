@@ -563,25 +563,26 @@ footer{
   display: flex;
   flex-direction: row;
   width: 100%;
+  align-items: center;
   background-color: #E5E5E5;
-  align-content: end;
+  justify-content: space-around;
 }
-
+#cpyright{
+  display: flex;
+  color: #000;
+  font-size: x-large;
+}
 footer #footerLogo{
   float: left ; 
-    margin-left: 130px;
   padding: 30px 0px;
     width: 90px  ;
-  
 }
 
 footer #footerNavIcons {
   display: flex; 
   justify-content: center ; 
-  width: 40%;
   
   align-items: center;
-  margin-left : auto;
  
 }
 footer #footerNavIcons a {
