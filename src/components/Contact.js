@@ -20,6 +20,7 @@ export default function Contact() {
             console.log(error.text);
         });
         form.current.reset();
+        window.alert("Votre Email a été envoyé ")
     };
 
     return (
@@ -36,8 +37,8 @@ export default function Contact() {
                 </p>
                 <form id="contact-form" ref={form} onSubmit={sendEmail} >
                     <input type="text" class="form-input" name="user_name" placeholder="Entre votre nom" size="2"/>
-                    <input type="email" class="form-input" name="user_email" placeholder="Entre votre Email"/>
-                    <textarea name="" id="" cols="30" rows="10" name="message" placeholder="Entre votre message" ></textarea>
+                    <input type="email" class="form-input" name="user_email" placeholder="Entre votre Email" required/>
+                    <textarea name="" id="" cols="30" rows="10" name="message" placeholder="Entre votre message" required ></textarea>
                     <input type="submit" className="btn-grad" id="contact-form-button" value="Envoyer" />
                 </form>
             </div>
