@@ -754,20 +754,34 @@ margin-top: 5%;
   }
 
   @media only screen and (max-width: 810px) {
+    footer {
+      min-height: max-content !important;
+      display: flex;
+        }
     #contact-aside-form-container{
-      display: block !important;
+      height: max-content !important;
+       flex-direction: column !important;
     }
+
     #contact-page > #contact-aside-form-container > aside {
       display: flex !important;
       background-color: #007A7A;
-      width: 100% !important;
+
+      min-width: 100% !important;
     }
     #contact-page > #contact-aside-form-container > aside > #contact-icons{
+      position: relative ;
+     left:  0 ;
      display: flex;
-     width: 100%;  
+     background-color: black;
+     flex-direction: column ;
+     margin-top:  0%  ;
+     width: 100%;
+     color : white ;
    }
+   
    #contact-page #contact-aside-form-container #contact-form-container{
-    display: block !important ; 
+    display: flex !important ; 
     width: 100% !important;
     min-width: 500px;
     overflow-wrap: break-word;
