@@ -29,8 +29,7 @@ export default function Contact() {
                         <p>01234567891345678</p>
                         <StaticImage src="../images//contact-icon.png" alt=""/>
                         <p>ikisquare@gmail.com</p>
-                        <StaticImage src="../images//contact-icon.png" alt=""/>
-                        <p>ikisquare@gmail.com</p>
+    
                     </div>
                     <div id="social-media-icons">
                         <StaticImage src="../images/linkedin.png" class="social-media-icons" alt=""/>

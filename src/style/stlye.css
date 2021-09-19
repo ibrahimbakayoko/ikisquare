@@ -47,10 +47,7 @@ body{
 
 
 
-.apropos-description{
-  padding-bottom: 40px;
-  border-left:  2px solid  #007A7A;
-}
+
 
 #apropos-page{
   background-color:   #E5E5E5;
@@ -73,12 +70,15 @@ body{
    padding: 30px 60px ;
   text-align: left ;
 }
-.apropos-title{
-  font-size: 30px;
-  color : #007A7A;
-  font-weight: 400 ;
-   padding: 30px 60px ;
-  text-align: left ;
+.apropos-title::before{
+  content : "" ;
+  position: absolute ; 
+  margin-left:  -25px;
+  margin-top: -25px ;
+  height: 80px;
+  width:  80px; 
+  border-left: 7px solid  #007A7A  ; 
+  border-top: 7px solid  #007A7A  ;
 }
 .apropos-content {
   flex: 0 0 31% !important ;
@@ -86,7 +86,6 @@ body{
 }
 .apropos-description{
   padding-bottom: 40px;
-  border-left:  2px solid  #007A7A;
 }
 .apropos {
   padding: 0px !important;
@@ -285,6 +284,8 @@ header #Header-container{
   margin: auto ;
   width: 82% ;
   max-width: 1600px ;
+  padding: 15px !important;
+
   display:  inherit;
 }
 .sticky {
@@ -318,15 +319,10 @@ header #HeaderNavLinks  a p {
 
 header{
   display: flex;
-  scroll-behavior: auto;
    background-color: black;
-  width: 100%;
+  width: 100% ;
   align-content: end;
 }
-
-
-
-
 
 header #HeaderNavLinks #contact-button {
 background-color: #007A7A;
@@ -334,27 +330,20 @@ padding: 15px 32px !important;
 border-radius: 2px;
 
 }
-header{
-  display: flex;
-   background-color: black;
-  width: 100%;
-  align-content: end;
-}
+
  #Header-container .openMenu {
   display: none !important;
 }
 
 header #Header-container #HeaderLogo{
-  float: left ; 
-  margin-top: 38px ;
-    width: 90px  ;
-  margin-left: 0; 
+  display:flex !important ;
+  align-items: center;
+  justify-content: center;
 }
 @media only screen and (min-width: 930px){
 header #Header-container #HeaderNavLinks {
     display: flex; 
-  justify-content: center ; 
-  width: 40%;
+  justify-content: end ; 
   align-items: center;
   margin-left : auto;
 }
@@ -404,12 +393,12 @@ header #Header-container #HeaderNavLinks a {
   margin: 0px ;
   padding: 0px;
     height: 200px;
-
 }
 /*corriger*/
 #contact-page #contact-header-photo img {
-  height: 200px;
   width: 100%;
+  height: max-content !important;
+
 }
 /*corriger*/
 #contact-page #contact-header-photo img {
@@ -447,13 +436,26 @@ header #Header-container #HeaderNavLinks a {
 .social-media-icons{
   margin-left: 20px; 
 }
+#social-media-icons{
+  margin-top: 10% !important;
+}
 
 #contact-page > #contact-aside-form-container > #contact-form-container > #contact-form > #contact-form-button {
   background-color: #007A7A !important;
   border:  none ; 
   color : white ;
+  font-size: medium;
   padding: 10px ;
 }
+#contact-page > #contact-aside-form-container > #contact-form-container > #contact-form > #contact-form-button:hover {
+  background-color: #ffffff !important;
+  border:  none ; 
+  color : #007A7A ;
+  border: 1px solid #007A7A;
+  cursor: pointer;
+}
+
+
 
 #contact-page > #contact-aside-form-container > aside {
   display: flex;
@@ -489,23 +491,22 @@ header #Header-container #HeaderNavLinks a {
   flex-direction: column ;
   margin-top:  30% ;
   align-items:  center; 
-  height: 60%;
+  height: max-content;
   width: 600px;
+    padding: 70px ;
+
   color : white ;
  
 }
 /*il faut corriger*/
 #contact-page > #contact-aside-form-container > aside > #contact-icons > #icons-container{
   position: relative;
-  height: 65% ;
   display: flex;
   flex-direction: column;
-  padding: 50px ;
   width: 200px ;
 }
 /*il faut corriger*/
 #icons-container{
-  padding: 30px;
 }
 
 /*il faut corriger*/
@@ -526,9 +527,7 @@ header #Header-container #HeaderNavLinks a {
 #contact-form-container h1 {
   font-size: 50px;
 }
-#social-media-icons {
-  padding-bottom:   5%; 
-}
+
 
 
 
@@ -557,7 +556,9 @@ header #Header-container #HeaderNavLinks a {
 
 footer{
   display: flex;
+  flex-direction: row;
   width: 100%;
+  background-color: #E5E5E5;
   align-content: end;
 }
 
@@ -722,7 +723,7 @@ margin-top: 5%;
  
   .sections-description{
     font-weight: 400 ;
-   padding: 0px 60px;
+   padding: 0px 15%;
    text-align: left ;
  }
  
@@ -762,7 +763,9 @@ margin-top: 5%;
       height: max-content !important;
        flex-direction: column !important;
     }
-
+    .apropos-description{
+      padding: 0px  !important ;
+    }
     #contact-page > #contact-aside-form-container > aside {
       display: flex !important;
       background-color: #007A7A;
@@ -795,7 +798,10 @@ margin-top: 5%;
       right: 4%;
       top : 3%;
     }
-  
+    .sections-description{
+     padding: 0px 30px ;
+   }
+   
     .openMenu{
       cursor: pointer !important;
     }
