@@ -1,13 +1,30 @@
-import React from 'react'
+import React , { useRef }  from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
-import styles from "../style/stlye.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { Link } from 'gatsby'
+import emailjs from 'emailjs-com';
+
 
 export default function Contact() {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_arb76yq', 'template_dj2m2yf', form.current, 'user_TlVhDKjtUENvRj1TFcGkL')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        form.current.reset();
+    };
+
     return (
         <section id="contact-page">
+
             <div id="contact-header-photo">
                 <StaticImage src="../images/contact-header.png" alt=""  style={{width : '100%'}} height={200} />
             </div>
@@ -17,12 +34,12 @@ export default function Contact() {
                 <p id="contact-description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit lacinia suspendisse sit ut fusce.
                 </p>
-                <div id="contact-form">
-                    <input type="text" class="form-input" placeholder="Entre votre nom" size="2"/>
-                    <input type="email" class="form-input"  placeholder="Entre votre Email"/>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Entre votre message" ></textarea>
-                    <button id="contact-form-button">Envoyer</button>
-                </div>
+                <form id="contact-form" ref={form} onSubmit={sendEmail} >
+                    <input type="text" class="form-input" name="user_name" placeholder="Entre votre nom" size="2"/>
+                    <input type="email" class="form-input" name="user_email" placeholder="Entre votre Email"/>
+                    <textarea name="" id="" cols="30" rows="10" name="message" placeholder="Entre votre message" ></textarea>
+                    <input type="submit" id="contact-form-button" value="Send" />
+                </form>
             </div>
             <aside>
                 <div id="contact-icons">

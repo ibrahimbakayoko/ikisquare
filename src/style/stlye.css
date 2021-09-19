@@ -412,7 +412,6 @@ header #Header-container #HeaderNavLinks a {
 #contact-page #contact-aside-form-container{
   display: flex ;
   flex-direction: row;
-  height : 750px;
 }
 
 
