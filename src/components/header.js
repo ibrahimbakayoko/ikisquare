@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-
   faBars,
   faTimes
 } from '@fortawesome/free-solid-svg-icons'
@@ -42,6 +41,8 @@ export default function Header() {
         <div id="HeaderLogo">
         <StaticImage   src="../images/logo.png"   width={95} alt="A Gatsby astronaut" />  </div>
         <FontAwesomeIcon icon={faBars} onClick={show}  className="openMenu" size="3x" />
+      
+
         <nav id="HeaderNavLinks" className="mainMenu">
                 <Link to="#landing-page" className="navLinks" onClick={close} >Acceuil</Link>
                 <Link to="#apropos-page" className="navLinks" onClick={close}><p>A propos</p> </Link>

@@ -1,7 +1,9 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import styles from "../style/stlye.css"
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { Link } from 'gatsby'
 
 export default function Contact() {
     return (
@@ -32,9 +34,9 @@ export default function Contact() {
     
                     </div>
                     <div id="social-media-icons">
-                        <StaticImage src="../images/linkedin.png" class="social-media-icons" alt=""/>
-                        <StaticImage src="../images/instagram.png" class="social-media-icons" alt=""/>
-                        <StaticImage src="../images/facebook 1.png" class="social-media-icons" alt=""/>
+                    <Link to="https://www.linkedin.com/company/ikisquare/posts/?feedView=all" > <FontAwesomeIcon className="social-media-icons" icon={faLinkedin} /></Link>
+                    <Link to="#" > <FontAwesomeIcon  className="social-media-icons" icon={faInstagram} /></Link>
+                    <Link to="https://www.facebook.com/IKISQUAREAgency/" > <FontAwesomeIcon className="social-media-icons" icon={faFacebook} /></Link>
                     </div>
                 </div>
             </aside>

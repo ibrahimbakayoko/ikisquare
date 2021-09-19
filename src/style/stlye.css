@@ -435,6 +435,11 @@ header #Header-container #HeaderNavLinks a {
 
 .social-media-icons{
   margin-left: 20px; 
+  font-size: 30px;
+  color: rgb(233, 233, 233);
+}
+.social-media-icons:hover{
+  color: #007A7A;
 }
 #social-media-icons{
   margin-top: 10% !important;
