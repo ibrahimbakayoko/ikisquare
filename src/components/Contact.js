@@ -45,7 +45,7 @@ export default function Contact() {
                 <div id="contact-icons">
                     <div id="icons-container">
                         <StaticImage src="../images/Group.png" alt=""/>
-                        <p>01234567891345678</p>
+                        <p>0475 93 76 79</p>
                         <StaticImage src="../images//contact-icon.png" alt=""/>
                         <p>ikisquare@gmail.com</p>
     

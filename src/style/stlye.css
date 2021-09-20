@@ -548,7 +548,8 @@ header #Header-container #HeaderNavLinks a {
 }
 
 #contact-page > #contact-aside-form-container > aside > #contact-icons > #icons-container p {
-  padding-left:  11%; 
+  display: flex;
+  justify-content: center;
 }
 
 
