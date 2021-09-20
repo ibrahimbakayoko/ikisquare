@@ -792,6 +792,11 @@ margin-bottom: 0;
   }
 
   @media only screen and (max-width: 810px) {
+    header #Header-container #HeaderLogo{
+      width: 90px  ;
+      margin-left: 15px;
+    }
+
     footer {
       min-height: max-content !important;
       display: flex;
@@ -835,8 +840,8 @@ margin-bottom: 0;
       right: 4%;
       top : 3%;
     }
-    footer #footerLogo{
-    
+    footer #footer-container #footerLogo{
+        margin-left: 15px;
         width: 70px  ;
     }
     
