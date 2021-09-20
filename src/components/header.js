@@ -37,22 +37,20 @@ export default function Header() {
 
   return (
     <header id="header">
-    <div id="Header-container">
-        <div id="HeaderLogo">
-        <StaticImage   src="../images/logo.png"   width={95} alt="A Gatsby astronaut" />  </div>
-        <FontAwesomeIcon icon={faBars} onClick={show}  className="openMenu" size="3x" />
-      
+      <div id="Header-container">
+          <div id="HeaderLogo">
+              <Link to="#page-acceuill"  >
+              <StaticImage   src="../images/logo.png"   width={95} alt="A Gatsby astronaut" /></Link>  
+          </div>
+          <FontAwesomeIcon icon={faBars} onClick={show}  className="openMenu" size="3x" />
+          <nav id="HeaderNavLinks" className="mainMenu">
+                  <Link to="#page-acceuill" className="navLinks" onClick={close} >Acceuil</Link>
+                  <Link to="#apropos-page" className="navLinks" onClick={close}><p>A propos</p> </Link>
+                  <Link to="#services-page" className="navLinks" onClick={close}>Services</Link>
+                  <Link to="#contact-page" className="navLinks" onClick={close} id="contact-button">Contact</Link>
+          </nav>
+      </div>
 
-        <nav id="HeaderNavLinks" className="mainMenu">
-                <Link to="#landing-page" className="navLinks" onClick={close} >Acceuil</Link>
-                <Link to="#apropos-page" className="navLinks" onClick={close}><p>A propos</p> </Link>
-                <Link to="#services-page" className="navLinks" onClick={close}>Services</Link>
-                <Link to="#contact-page" className="navLinks" onClick={close} id="contact-button">Contact</Link>
-        </nav>
-    </div>
-   
-    
-    
 </header>
   )
 }

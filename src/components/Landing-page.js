@@ -8,9 +8,14 @@ export default function Landingpage() {
         <div className="container-ikisquare">
             <div className="topleft" ></div>            
             <div id="ikisquare">
-                <p><span className="tags">&lt;</span> IKISQUARE</p>
-                <p>WEB AGENCY <span className="tags">/ &gt;</span></p>
-                <Link to="#contact-page" id="ikisquare-button">Contactez Nous </Link>
+                <p>
+                    <span className="tags">
+                        &lt;
+                    </span>
+                    IKISQUARE
+                </p>
+                <p>WEB AGENCY <span className="tags">&#47;&gt;</span></p>
+                <Link to="#contact-page" id="ikisquare-button">Contacter Nous </Link>
             </div>
             <div className="bottomright" ></div>  
         </div>

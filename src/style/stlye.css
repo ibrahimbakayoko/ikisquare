@@ -16,7 +16,10 @@ body{
 
 }
 
+html{
+  scroll-behavior: smooth;
 
+}
 
 
 
@@ -134,11 +137,15 @@ background-color:#007A7A ;
   font-weight: 300;
   margin-top: 0px;
   font-size: 30px;
+  text-indent: 60px;
 }
 .tags{
   color :#007A7A;
-}
-
+  font-size: 60px ;
+  line-height: 30px;
+  letter-spacing: 0px !important;;
+  font-weight: 400;
+ }
 
 
 
@@ -150,10 +157,10 @@ display: flex;
 flex-wrap: wrap;
 flex-direction: row;
 margin:  auto ;
-/* margin-top : 100px; */
 width: 85%;
+padding-bottom: 50px;
 max-width: 85%;
-justify-content: space-around;
+justify-content: space-evenly;
 }
 
 #blog article {
@@ -162,6 +169,9 @@ text-align: left ;
 background-color: black ;
 padding: 30px;
 margin-bottom:30px;
+line-height: 1.6;
+max-height: 300px;
+min-height: 300px;
 }
 
 #blog article:first-child , #blog article:nth-child(3)  {
@@ -187,6 +197,8 @@ background-color:#007A7A ;
   width: 420px;
   margin:0 auto;
   z-index: 0;
+  width: 420px;
+  
 }
 .topleft {
   background-color: #007A7A;
@@ -211,6 +223,7 @@ letter-spacing: 4px;
     margin : auto;
     align-items: center;
   padding-top: 10px;
+  padding-right: 5px;
     margin-top : 20px;
   font-size: 45px;
   height: 380px;
@@ -280,14 +293,27 @@ letter-spacing: 4px;
 
 
 
+  header{
+    display: flex;
+     background-color: black;
+    width: 100% ;
+    justify-content: center;
+    align-content: end;
+  }
 header #Header-container{
-  margin: auto ;
-  width: 82% ;
   max-width: 1600px ;
-  padding: 15px !important;
-
-  display:  inherit;
+  padding: 15px 0px !important;
+  display:  flex;
+  width: 100%;
+  box-sizing: border-box;
 }
+    header #HeaderNavLinks {
+      display: none ;
+      width: 100% !important;
+      justify-content: end !important ;
+      align-items: center;
+      background: #000;
+  }
 .sticky {
   z-index: 999;
   position: fixed;
@@ -303,7 +329,6 @@ header #HeaderNavLinks a {
   }
   header #HeaderNavLinks .navLinks:nth-child(odd):hover ,header #HeaderNavLinks .navLinks p:hover  {
             color : #007A7A !important;
-            border-bottom: 2px solid #007A7A ;       
     }
  
     header #HeaderNavLinks #contact-button:hover {
@@ -317,12 +342,6 @@ header #HeaderNavLinks  a p {
 }
 
 
-header{
-  display: flex;
-   background-color: black;
-  width: 100% ;
-  align-content: end;
-}
 
 header #HeaderNavLinks #contact-button {
 background-color: #007A7A;
@@ -338,6 +357,8 @@ border-radius: 2px;
 header #Header-container #HeaderLogo{
   display:flex !important ;
   align-items: center;
+  width: 90px  ;
+
   justify-content: center;
 }
 @media only screen and (min-width: 930px){
@@ -418,7 +439,7 @@ header #Header-container #HeaderNavLinks a {
   display: inherit ; 
   flex-wrap: wrap;
   flex-direction: column ;
-  padding: 5% 10%;
+  padding: 7% 10%;
   width: 60%;
   height: max-content;
   font-size: 20px;
@@ -449,6 +470,7 @@ header #Header-container #HeaderNavLinks a {
   border-radius: 2px;
   font-size: medium;
   padding: 10px ;
+  margin-top: 50px ;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
@@ -495,7 +517,7 @@ header #Header-container #HeaderNavLinks a {
   display: flex;
   background-color: black;
   flex-direction: column ;
-  margin-top:  30% ;
+  margin-top:  47% ;
   align-items:  center; 
   height: max-content;
   width: 600px;
@@ -559,34 +581,42 @@ header #Header-container #HeaderNavLinks a {
 
 
 
-
-footer{
+#footer-container{
+  box-sizing: border-box;
+  max-width: 1600px ;
   display: flex;
   flex-direction: row;
   width: 100%;
   align-items: center;
   background-color: #E5E5E5;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+footer{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #E5E5E5;
+  justify-content: center;
 }
 #cpyright{
   display: flex;
   color: #000;
   font-size: 19px;
 }
-footer #footerLogo{
+footer #footer-container #footerLogo{
   float: left ; 
   padding: 30px 0px;
     width: 90px  ;
 }
 
-footer #footerNavIcons {
+footer #footer-container  #footerNavIcons {
   display: flex; 
   justify-content: center ; 
   
   align-items: center;
  
 }
-footer #footerNavIcons a {
+footer #footer-container  #footerNavIcons a {
    padding-left: 15px;
 }
 
@@ -640,9 +670,8 @@ color : white ;
   padding-top: 20px !important;
 }
 #service-title{
-  margin-left: 12.5%;
+  margin-left: 9.5%;
 margin-bottom: 0;
-margin-top: 5%;
 }
 .services-titles{
   font-size: 20px;
@@ -742,7 +771,7 @@ margin-top: 5%;
 }
 .flex-item {
   padding: 5px;
-  min-height: 400px; 
+  min-height: 420px; 
   line-height: 30px;
   color: white;
   font-weight: bold;

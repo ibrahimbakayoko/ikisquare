@@ -23,8 +23,9 @@ export default function index() {
 
 
         <Layout>
-            <Services/>
             <Apropos/>
+            <Services/>
+
             <Contact/>
         </Layout>
             
