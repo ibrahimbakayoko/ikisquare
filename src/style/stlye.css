@@ -162,7 +162,10 @@ padding-bottom: 50px;
 max-width: 85%;
 justify-content: space-evenly;
 }
-
+#article-description , .sections-description{
+  text-align: justify !important;
+  text-justify: inter-word !important;
+}
 #blog article {
 width: 250px;
 text-align: left ;
