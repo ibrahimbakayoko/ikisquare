@@ -33,8 +33,7 @@ export default function Contact() {
             <div id="contact-form-container">
                 <h1>Contact</h1>
                 <p id="contact-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit lacinia suspendisse sit ut fusce.
-                </p>
+                N’hésitez pas à prendre contact avec nous pour nous faire part de vos questions. Nous serons ravis d’y apporter une réponse.                 </p>
                 <form id="contact-form" ref={form} onSubmit={sendEmail} >
                     <input type="text" class="form-input" name="user_name" placeholder="Entre votre nom" size="2"/>
                     <input type="email" class="form-input" name="user_email" placeholder="Entre votre Email" required/>
