@@ -266,10 +266,15 @@ letter-spacing: 4px;
       color: white;
       cursor: pointer;
     }
+    #page-acceuill #ikisquare #ikisquare-button:active {
+      background-color:  #007A7A;
+      color: white;
+      cursor: pointer;
+    }
 
 
 
-
+    
 
 
 
@@ -333,8 +338,15 @@ header #HeaderNavLinks a {
   header #HeaderNavLinks .navLinks:nth-child(odd):hover ,header #HeaderNavLinks .navLinks p:hover  {
             color : #007A7A !important;
     }
+  header #HeaderNavLinks .navLinks:nth-child(odd):active ,header #HeaderNavLinks .navLinks p:active  {
+            color : #007A7A !important;
+    }
  
     header #HeaderNavLinks #contact-button:hover {
+      color : #007A7A !important;    
+      background-color: wheat;   
+}
+    header #HeaderNavLinks #contact-button:active {
       color : #007A7A !important;    
       background-color: wheat;   
 }
@@ -462,6 +474,9 @@ header #Header-container #HeaderNavLinks a {
 .social-media-icons:hover{
   color: #007A7A;
 }
+.social-media-icons:active{
+  color: #007A7A;
+}
 #social-media-icons{
   margin-top: 10% !important;
 }
@@ -481,6 +496,12 @@ header #Header-container #HeaderNavLinks a {
 
 }
 #contact-page > #contact-aside-form-container > #contact-form-container > #contact-form > #contact-form-button:hover {
+  background-position: right center; /* change the direction of the change here */
+   color: #fff !important;
+   text-decoration: none;
+   cursor: pointer;
+}
+#contact-page > #contact-aside-form-container > #contact-form-container > #contact-form > #contact-form-button:active {
   background-position: right center; /* change the direction of the change here */
    color: #fff !important;
    text-decoration: none;
@@ -616,10 +637,23 @@ footer #footer-container #footerLogo{
 footer #footer-container  #footerNavIcons {
   display: flex; 
   justify-content: center ; 
-  
+
   align-items: center;
  
 }
+.footerNavIcons {
+  font-size: 30px;
+color: rgb(24, 20, 20) ;
+}
+.footerNavIcons:hover {
+  color: #007A7A;
+
+}
+.footerNavIcons:active {
+  color: #007A7A;
+
+}
+
 footer #footer-container  #footerNavIcons a {
    padding-left: 15px;
 }
