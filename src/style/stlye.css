@@ -902,8 +902,15 @@ margin-bottom: 0;
    
 
  }
+
+
+ #contact-form-container div {
+   margin-right: 40px;
+ }
   @media only screen and (max-width: 930px){
-     
+    #contact-form-container div {
+      margin-right: 0px !important;
+    }
     #Header-container .openMenu {
       display:  block !important;
       position: fixed;
