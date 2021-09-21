@@ -31,6 +31,7 @@ export default function Contact() {
             </div>
         <div id="contact-aside-form-container">
             <div id="contact-form-container">
+                <div>
                 <h1>Contact</h1>
                 <p id="contact-description">
                 N’hésitez pas à prendre contact avec nous pour nous faire part de vos questions. Nous serons ravis d’y apporter une réponse.                 </p>
@@ -40,7 +41,11 @@ export default function Contact() {
                     <textarea name="" id="" cols="30" rows="10" name="message" placeholder="Entre votre message" required ></textarea>
                     <input type="submit" className="btn-grad" id="contact-form-button" value="Envoyer" />
                 </form>
+                </div>
+                
             </div>
+
+
             <aside>
                 <div id="contact-icons">
                     <div id="icons-container">

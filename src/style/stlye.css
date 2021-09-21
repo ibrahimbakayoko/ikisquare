@@ -426,8 +426,8 @@ header #Header-container #HeaderNavLinks a {
 #contact-page #contact-header-photo {
   margin: 0px ;
   padding: 0px;
-    height: 200px;
-}
+/*     height: 200px;
+ */}
 /*corriger*/
 #contact-page #contact-header-photo img {
   width: 100%;
@@ -442,28 +442,33 @@ header #Header-container #HeaderNavLinks a {
 #contact-page #contact-aside-form-container #contact-form-container div {
   display:  inherit ; 
   flex-direction: column;
+  padding-top : 10% !important ;
+  padding-bottom : 10% !important ;
+
 }
 #contact-page #contact-aside-form-container{
   display: flex ;
+  justify-content: center !important;
   flex-direction: row;
 }
 
 
 /*corriger*/
-#contact-page #contact-aside-form-container #contact-form-container{
-  display: inherit ; 
+#contact-page #contact-aside-form-container #contact-form-container div{
   flex-wrap: wrap;
   flex-direction: column ;
-  padding: 7% 10%;
   width: 60%;
   height: max-content;
   font-size: 20px;
-  min-width: 500px;
+  display: flex !important ; 
+  width: 55% ;
+/*   min-width: 500px;
+ */  overflow-wrap: break-word;
   overflow-wrap: break-word;
 }
 #contact-description{
-  padding-right: 20%;
-}
+/*   padding-right: 20%;
+ */}
 /*corriger*/
 
 .social-media-icons{
@@ -481,7 +486,7 @@ header #Header-container #HeaderNavLinks a {
   margin-top: 10% !important;
 }
 
-#contact-page > #contact-aside-form-container > #contact-form-container > #contact-form > #contact-form-button {
+#contact-page > #contact-aside-form-container > #contact-form-container > div > #contact-form > #contact-form-button {
   background-image: linear-gradient(to right, #045353 0%, #0caaaa  51%, #007A7A  100%) ;
   border:  none ; 
   color: white;            
@@ -495,13 +500,13 @@ header #Header-container #HeaderNavLinks a {
   background-size: 200% auto;
 
 }
-#contact-page > #contact-aside-form-container > #contact-form-container > #contact-form > #contact-form-button:hover {
+#contact-page > #contact-aside-form-container > #contact-form-container > div > #contact-form > #contact-form-button:hover {
   background-position: right center; /* change the direction of the change here */
    color: #fff !important;
    text-decoration: none;
    cursor: pointer;
 }
-#contact-page > #contact-aside-form-container > #contact-form-container > #contact-form > #contact-form-button:active {
+#contact-page > #contact-aside-form-container > #contact-form-container > div > #contact-form > #contact-form-button:active {
   background-position: right center; /* change the direction of the change here */
    color: #fff !important;
    text-decoration: none;
@@ -512,18 +517,20 @@ header #Header-container #HeaderNavLinks a {
 #contact-page > #contact-aside-form-container > aside {
   display: flex;
   background-color: #007A7A;
+  margin-left: auto;
   width: 30%;
+  align-items: center !important;
 }
 
 /*corriger*/
-#contact-page > #contact-aside-form-container > #contact-form-container > #contact-form > input , #contact-form textarea{
+#contact-page > #contact-aside-form-container > #contact-form-container > div > #contact-form > input , #contact-form textarea{
   border: none ; 
   border-bottom: 1px solid black   ;
   font-size: 17px;
   font-family: 'Roboto', sans-serif;
 }
 #contact-form input , #contact-form button , #contact-form textarea {
-  width: 70%;
+  width: 100%;
   margin-top: 20px;
 
 }
@@ -541,7 +548,6 @@ header #Header-container #HeaderNavLinks a {
   display: flex;
   background-color: black;
   flex-direction: column ;
-  margin-top:  47% ;
   align-items:  center; 
   height: max-content;
   width: 600px;
@@ -577,8 +583,9 @@ header #Header-container #HeaderNavLinks a {
 }
 
 
-#contact-form-container h1 {
+#contact-form-container > div > h1 {
   font-size: 50px;
+  margin: 0;
 }
 
 
@@ -827,11 +834,20 @@ margin-bottom: 0;
   flex-wrap: wrap;
   justify-content: center;
   }
-
+  #contact-page #contact-aside-form-container #contact-form-container{
+    display: flex;
+    justify-content: center;
+  }
   @media only screen and (max-width: 810px) {
     header #Header-container #HeaderLogo{
       width: 90px  ;
       margin-left: 15px;
+    }
+    #blog article{
+      min-height :350px ; 
+    }
+
+    #contact-page #contact-aside-form-container #contact-form-container{
     }
 
     footer {
@@ -839,7 +855,6 @@ margin-bottom: 0;
       display: flex;
         }
     #contact-aside-form-container{
-      height: max-content !important;
        flex-direction: column !important;
     }
     .apropos-description{
@@ -848,7 +863,7 @@ margin-bottom: 0;
     #contact-page > #contact-aside-form-container > aside {
       display: flex !important;
       background-color: #007A7A;
-
+      align-items: center !important;
       min-width: 100% !important;
     }
     #contact-page > #contact-aside-form-container > aside > #contact-icons{
@@ -862,12 +877,7 @@ margin-bottom: 0;
      color : white ;
    }
    
-   #contact-page #contact-aside-form-container #contact-form-container{
-    display: flex !important ; 
-    width: 100% !important;
-    min-width: 500px;
-    overflow-wrap: break-word;
-  }
+
  }
   @media only screen and (max-width: 930px){
      
