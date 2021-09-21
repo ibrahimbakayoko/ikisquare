@@ -11,8 +11,9 @@ import {
 
 
 export default function Header() {
-
-  window.onscroll = ()=> {
+  if (typeof window !== `undefined`){
+  
+    window.onscroll = ()=> {
       var header = document.getElementById("header");
       var sticky = header.offsetTop;
 
@@ -22,6 +23,9 @@ export default function Header() {
         header.classList.remove("sticky");
     };
   }
+
+  }
+
 
 
       let show=()=>{

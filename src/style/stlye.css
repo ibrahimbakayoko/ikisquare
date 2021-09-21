@@ -480,8 +480,8 @@ header #Header-container #HeaderNavLinks a {
 
 .social-media-icons{
   margin-left: 20px; 
-  font-size: 30px;
   color: rgb(233, 233, 233);
+  font-size: 30px !important;
 }
 .social-media-icons:hover{
   color: #007A7A;
@@ -656,7 +656,7 @@ footer #footer-container  #footerNavIcons {
  
 }
 .footerNavIcons {
-  font-size: 30px;
+  font-size: 30px !important;
 color: rgb(24, 20, 20) ;
 }
 .footerNavIcons:hover {
