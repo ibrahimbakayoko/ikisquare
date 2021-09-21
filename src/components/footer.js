@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import "../style/footer.css"
 
 export default function Footer() {
@@ -18,7 +18,6 @@ export default function Footer() {
 
             <nav id="footerNavIcons">
                     <Link to="https://www.linkedin.com/company/ikisquare/posts/?feedView=all" > <FontAwesomeIcon className="footerNavIcons" icon={faLinkedin} /></Link>
-                    <Link to="#" > <FontAwesomeIcon  className="footerNavIcons" icon={faInstagram} /></Link>
                     <Link to="https://www.facebook.com/IKISQUAREAgency/" > <FontAwesomeIcon className="footerNavIcons" icon={faFacebook} /></Link>
             </nav>
         </div>

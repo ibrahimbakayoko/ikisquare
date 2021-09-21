@@ -57,7 +57,6 @@ export default function Contact() {
                     </div>
                     <div id="social-media-icons">
                     <Link to="https://www.linkedin.com/company/ikisquare/posts/?feedView=all" > <FontAwesomeIcon className="social-media-icons" icon={faLinkedin} /></Link>
-                    <Link to="#" > <FontAwesomeIcon  className="social-media-icons" icon={faInstagram} /></Link>
                     <Link to="https://www.facebook.com/IKISQUAREAgency/" > <FontAwesomeIcon className="social-media-icons" icon={faFacebook} /></Link>
                     </div>
                 </div>
