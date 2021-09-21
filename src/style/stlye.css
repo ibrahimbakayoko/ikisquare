@@ -310,7 +310,6 @@ letter-spacing: 4px;
   }
 header #Header-container{
   max-width: 1600px ;
-  padding: 15px 0px !important;
   display:  flex;
   width: 100%;
   box-sizing: border-box;
@@ -840,14 +839,28 @@ margin-bottom: 0;
   }
   @media only screen and (max-width: 810px) {
     header #Header-container #HeaderLogo{
-      width: 90px  ;
+      width: 70px  ;
       margin-left: 15px;
+    }
+    header{
+        padding: 10px 0px;
+    }
+    #article-description {
+      line-height: 1.5;
     }
     #blog article{
       min-height :350px ; 
     }
-
-    #contact-page #contact-aside-form-container #contact-form-container{
+    .container-ikisquare{
+      width: 350px;
+    }
+    .bottomright{
+      position: relative !important;
+        left: 238.5px !important
+    }
+  
+    #contact-page #contact-aside-form-container #contact-form-container div{
+      width: 80% ;
     }
 
     footer {
