@@ -1,6 +1,11 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,400&display=swap);
 
+
+/* animation */
+
+/* fin animation */
+
 body{
   margin: 0;
   color : white;
@@ -163,14 +168,14 @@ max-width: 85%;
 justify-content: space-evenly;
 }
 #article-description , .sections-description{
-/*   text-align: justify !important;
-   text-justify: inter-word !important;*/
+  text-align: justify !important;
+  text-justify: inter-word !important;
 }
 #blog article {
 width: 250px;
 text-align: left;
 background-color: black;
-padding: 30px;
+padding: 0px 30px 0 30px;
 margin-bottom: 30px;
 line-height: 1.6;
 width: 16%;
@@ -201,26 +206,48 @@ background-color:#007A7A ;
 }
 .container-ikisquare{
   width: 420px;
-  margin:0 auto;
   z-index: 0;
-  width: 420px;
-  
+  margin: 0 auto;
 }
+
+.slideimage{
+  flex: 1;
+  z-index: 0;
+}
+
+
+.slide .slidetext{
+  margin-top: 10%;
+  flex: 1;
+}
+
+/* .topleft {
+    background-color: #007A7A;
+    width: 124px;
+    height: 124px;
+    top: 134px;
+    left: 32px;
+    position: relative;
+    z-index: -1;
+} */
+
 .topleft {
   background-color: #007A7A;
   width: 124px;
   height: 124px;
   top: 134px;
-  left: -10px;
+  left: 32px;
   position: relative;
   z-index: -1;
 }
+
 #ikisquare p:first-child {
  padding-top : 10px  !important ;
  padding-bottom: 0px;
 letter-spacing: 4px;
 }
-#page-acceuill #ikisquare{
+
+/* #page-acceuill #ikisquare{
   position: inherit;
   display:  flex ;
   flex-direction: column;  
@@ -229,12 +256,27 @@ letter-spacing: 4px;
     margin : auto;
     align-items: center;
   padding-top: 10px;
-  padding-right: 4%;
+  padding-right: 5px;
     margin-top : 20px;
   font-size: 45px;
   height: 380px;
-  }
-  .bottomright {
+  } */
+
+  #page-acceuill #ikisquare {
+    position: inherit;
+    display: flex;
+    flex-direction: column;
+    background-color: #121212;
+    min-width: 49%;
+    margin: auto;
+    align-items: center;
+    padding-right: 5px;
+    margin-top: 20px;
+    font-size: 45px;
+    height: 330px;
+    width: 330px;
+}
+  /* .bottomright {
     background-color: #fff;
     width: 124px;
     height: 124px;
@@ -242,7 +284,19 @@ letter-spacing: 4px;
     left: 309px;
     position: relative;
     z-index: -1;
-  }
+  } */
+
+  .bottomright {
+    background-color: #fff;
+    width: 124px;
+    height: 124px;
+    bottom: 115px;
+    left: 264px;
+    position: relative;
+    z-index: -1;
+}
+
+
   #page-acceuill {
     display: flex ;
     flex-direction: column;
@@ -311,12 +365,21 @@ letter-spacing: 4px;
     justify-content: center;
     align-content: end;
   }
-header #Header-container{
+
+/* header #Header-container{
   max-width: 1600px ;
   display:  flex;
   width: 100%;
   box-sizing: border-box;
+} */
+
+header #Header-container{
+  max-width: 1600px ;
+  display:  flex;
+  width: 85%;
+  box-sizing: border-box;
 }
+
 #footer-container  , header #Header-container {
   padding : 0px 40px;
 }
@@ -335,13 +398,22 @@ header #Header-container{
   top: 0;
   width: 100%;
 }
-header #HeaderNavLinks a {
+
+/* header #HeaderNavLinks a {
   margin-left: 80px;
           color : white ;
           font-size: 18px;
           padding: 10px;
           text-decoration: none;
-  }
+  } */
+
+header #HeaderNavLinks a {
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;
+}
+
   header #HeaderNavLinks .navLinks:nth-child(odd):hover ,header #HeaderNavLinks .navLinks p:hover  {
             color : #007A7A !important;
     }
@@ -431,21 +503,19 @@ header #Header-container #HeaderNavLinks a {
 }
 
 #contact-page #contact-header-photo {
-  width: 100% !important;
-
   margin: 0px ;
   padding: 0px;
-}
+/*     height: 200px;
+ */}
 /*corriger*/
 #contact-page #contact-header-photo img {
-  width: 100% !important;
-  display: flex;
-  height: 100%;
+  width: 100%;
+  height: max-content !important;
 
-  object-fit: cover !important ;
 }
 /*corriger*/
 #contact-page #contact-header-photo img {
+  display: flex;
 }
 
 #contact-page #contact-aside-form-container #contact-form-container div {
@@ -496,7 +566,7 @@ header #Header-container #HeaderNavLinks a {
 }
 
 #contact-page > #contact-aside-form-container > #contact-form-container > div > #contact-form > #contact-form-button {
-  background-image: linear-gradient(to right, #1e7979 0%, #0caaaa  51%, #007A7A  100%) ;
+  background-image: linear-gradient(to right, #045353 0%, #0caaaa  51%, #007A7A  100%) ;
   border:  none ; 
   color: white;            
   border-radius: 2px;
@@ -534,7 +604,7 @@ header #Header-container #HeaderNavLinks a {
 /*corriger*/
 #contact-page > #contact-aside-form-container > #contact-form-container > div > #contact-form > input , #contact-form textarea{
   border: none ; 
-  border-bottom: 1px solid black   ;
+  border-bottom: 1px solid #007A7A  ;
   font-size: 17px;
   font-family: 'Roboto', sans-serif;
 }
@@ -821,7 +891,7 @@ margin-bottom: 0;
   padding-top: 30px;
 }
 .flex-item img{
-  height: 60px;
+  height: auto;
 }
 .flex-item {
   display: flex;
@@ -862,16 +932,14 @@ margin-bottom: 0;
     }
     #blog article{
       min-height :350px ; 
-      width: 80%;
     }
-    .container-ikisquare{
+    /* .container-ikisquare{
       width: 350px;
-    }
-    .bottomright{
+    } */
+    /* .bottomright{
       position: relative !important;
-        left: 235.5px !important;
-        bottom: 115px;
-    }
+        left: 238.5px !important
+    } */
   
     #contact-page #contact-aside-form-container #contact-form-container div{
       width: 80% ;
@@ -907,15 +975,34 @@ margin-bottom: 0;
 
  }
 
+ /* le contenu du header avec le text du slide */
+ .slide{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: 79%;
+   /* background-color: red; */
+   margin: auto;
+   padding: 0 40px;
+ }
+
+ .welcome-big{
+   font-size: 43px;
+   font-weight: 400;
+ }
+
+
+ .welcome-medium{
+    font-weight: 300;
+    font-size: 30px;
+    
+ }
+
 
  #contact-form-container div {
    margin-right: 40px;
  }
   @media only screen and (max-width: 930px){
-    header #HeaderNavLinks #contact-button {
-
-      margin-top : 25px ;
-      }
     #contact-form-container div {
       margin-right: 0px !important;
     }

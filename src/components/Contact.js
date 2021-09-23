@@ -27,7 +27,7 @@ export default function Contact() {
         <section id="contact-page">
 
             <div id="contact-header-photo">
-                <StaticImage src="../images/contact-header.png" alt="image principal section"    />
+                <StaticImage src="../images/contact-header.png" alt=""  style={{width : '100%'}} height={200} />
             </div>
         <div id="contact-aside-form-container">
             <div id="contact-form-container">
@@ -49,15 +49,15 @@ export default function Contact() {
             <aside>
                 <div id="contact-icons">
                     <div id="icons-container">
-                        <StaticImage src="../images/Group.png" alt="icon Telephone"/>
+                        <StaticImage src="../images/Group.png" alt=""/>
                         <p>0475 93 76 79</p>
-                        <StaticImage src="../images//contact-icon.png" alt="icon Email"/>
+                        <StaticImage src="../images//contact-icon.png" alt=""/>
                         <p>ikisquare@gmail.com</p>
     
                     </div>
                     <div id="social-media-icons">
-                    <Link to="https://www.linkedin.com/company/ikisquare/posts/?feedView=all" aria-label="notre page linkedin" > <FontAwesomeIcon className="social-media-icons" icon={faLinkedin} /></Link>
-                    <Link to="https://www.facebook.com/IKISQUAREAgency/" aria-label="notre page facebook" > <FontAwesomeIcon className="social-media-icons" icon={faFacebook} /></Link>
+                    <Link to="https://www.linkedin.com/company/ikisquare/posts/?feedView=all" > <FontAwesomeIcon className="social-media-icons" icon={faLinkedin} /></Link>
+                    <Link to="https://www.facebook.com/IKISQUAREAgency/" > <FontAwesomeIcon className="social-media-icons" icon={faFacebook} /></Link>
                     </div>
                 </div>
             </aside>
