@@ -75,8 +75,9 @@ html{
   font-size: 30px;
   color : #007A7A;
   font-weight: 400 ;
-   padding: 30px 60px ;
+   padding: 30px 0px ;
   text-align: left ;
+  margin: 0;
 }
 .apropos-title::before{
   content : "" ;
@@ -96,7 +97,7 @@ html{
   padding-bottom: 40px;
 }
 .apropos {
-  padding: 0px !important;
+  padding: 2% 0% !important;
 }
 
 
@@ -168,14 +169,14 @@ max-width: 85%;
 justify-content: space-evenly;
 }
 #article-description , .sections-description{
-  text-align: justify !important;
-  text-justify: inter-word !important;
+/*   text-align: justify !important;
+  text-justify: inter-word !important; */
 }
 #blog article {
 width: 250px;
 text-align: left;
 background-color: black;
-padding: 0px 30px 0 30px;
+padding:  2.2%  30px;
 margin-bottom: 30px;
 line-height: 1.6;
 width: 16%;
@@ -195,7 +196,7 @@ background-color:#007A7A ;
   font-size:  20px ;
     font-weight: 500 ;
     padding-bottom: 7%;
-    
+    margin: 0;
 }
 .article-title::before{
   content: "";
@@ -242,8 +243,8 @@ background-color:#007A7A ;
 }
 
 #ikisquare p:first-child {
- padding-top : 10px  !important ;
- padding-bottom: 0px;
+/*  padding-top : 10px  !important ;
+ */ padding-bottom: 0px;
 letter-spacing: 4px;
 }
 
@@ -270,7 +271,7 @@ letter-spacing: 4px;
     min-width: 49%;
     margin: auto;
     align-items: center;
-    padding-right: 5px;
+    padding-right: 12px;
     margin-top: 20px;
     font-size: 45px;
     height: 330px;
@@ -316,7 +317,7 @@ letter-spacing: 4px;
     font-size: 20px;
     padding: 10px;
     text-decoration: none;
-    margin-top : 30px
+    margin-top : 15px
     }
     #page-acceuill #ikisquare #ikisquare-button:hover {
       background-color:  #007A7A;
@@ -376,13 +377,11 @@ letter-spacing: 4px;
 header #Header-container{
   max-width: 1600px ;
   display:  flex;
-  width: 85%;
+  width: 100%;
+  padding: 5px 25px;
   box-sizing: border-box;
 }
 
-#footer-container  , header #Header-container {
-  padding : 0px 40px;
-}
 
 
     header #HeaderNavLinks {
@@ -441,20 +440,14 @@ header #HeaderNavLinks #contact-button {
 background-color: #007A7A;
 padding: 15px 32px !important;
 border-radius: 2px;
-
+margin-left: 2%;
 }
 
  #Header-container .openMenu {
   display: none !important;
 }
 
-header #Header-container #HeaderLogo{
-  display:flex !important ;
-  align-items: center;
-  width: 90px  ;
 
-  justify-content: center;
-}
 @media only screen and (min-width: 930px){
 header #Header-container #HeaderNavLinks {
     display: flex; 
@@ -701,6 +694,7 @@ header #Header-container #HeaderNavLinks a {
   align-items: center;
   background-color: #E5E5E5;
   justify-content: space-between;
+  padding: 25px !important;
 }
 footer{
   display: flex;
@@ -714,10 +708,13 @@ footer{
   color: #000;
   font-size: 19px;
 }
-footer #footer-container #footerLogo{
-  float: left ; 
-  padding: 30px 0px;
-    width: 90px  ;
+footer #footer-container #footerLogo , header #Header-container #HeaderLogo{
+  height: 100%;
+  justify-content: center;
+/*     padding: 15px 0px;
+ */    align-items: center;
+  width: 70px;
+  display: flex;
 }
 
 footer #footer-container  #footerNavIcons {
@@ -788,10 +785,13 @@ color : white ;
    background-color: #E5E5E5;
   justify-content: end ;
   width: 100%;
+  padding-bottom: 50px;
 }
 
 #services-firstchild .flex-item{
-  padding-top: 20px !important;
+/*   padding-top: 20px !important;
+ */
+ padding: 40px 10px;
 }
 #service-title{
   margin-left: 9.5%;
@@ -858,7 +858,7 @@ margin-bottom: 0;
 
 
 .sections-title{
-  margin-bottom:  50px; 
+  margin-bottom:  50px !important; 
   color : black ; 
   font-family: 'Roboto', sans-serif;
     font-size: 42px;
@@ -888,8 +888,8 @@ margin-bottom: 0;
  }
  
 .flex-item img{
-  padding-top: 30px;
-}
+/*   padding-top: 30px;
+ */}
 .flex-item img{
   height: auto;
 }
@@ -898,7 +898,7 @@ margin-bottom: 0;
   flex-direction: column;
   align-items: center;
   padding: 5px;
-  min-height: 480px; 
+  min-height: max-content; 
   line-height: 30px;
   color: white;
   font-weight: bold;
@@ -910,7 +910,7 @@ margin-bottom: 0;
   text-align: center;
 }
 .flex-container {
-  padding: 7% 10%;
+  padding: 2% 10%;
   margin: 0;
   display: flex;
   flex-direction: row;
@@ -922,25 +922,42 @@ margin-bottom: 0;
     justify-content: center;
   }
   @media only screen and (max-width: 810px) {
-   
+       
+    #page-acceuill #ikisquare #ikisquare-button {
+  
+     margin-top : 10px
+     }
     
     header{
         padding: 10px 0px;
     }
     #article-description {
-      line-height: 1.5;
+      line-height: 1.6;
     }
     #blog article{
-      min-height :350px ; 
+      min-height :350px ;
+      width: 70%; 
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
     }
-    /* .container-ikisquare{
-      width: 350px;
-    } */
-    /* .bottomright{
-      position: relative !important;
-        left: 238.5px !important
-    } */
+    #page-acceuill #ikisquare {
+
+      margin: 0;
+     
+  }
+  .bottomright {
+    left: 229px;
+  }
+  .topleft {
+
+    top: 115px;
+    left: -9px;
   
+}
+    .article-title{
+      margin: 0;
+    }
     #contact-page #contact-aside-form-container #contact-form-container div{
       width: 80% ;
     }
@@ -971,7 +988,10 @@ margin-bottom: 0;
      width: 100%;
      color : white ;
    }
-   
+   .flex-item{
+     height: max-content;
+     min-height: min-content;
+   }
 
  }
 
@@ -998,7 +1018,10 @@ margin-bottom: 0;
     
  }
 
-
+ #Header-container .closeMenu {
+  display:  none;
+  position: relative;
+}
  #contact-form-container div {
    margin-right: 40px;
  }
@@ -1010,17 +1033,21 @@ margin-bottom: 0;
       display:  block !important;
       position: fixed;
       right: 7%;
-      top : 2%;
+      top : 1.2%;
     }
-    #footer-container  , header #Header-container {
-      padding : 0px 15px;
+    #Header-container .closeMenu {
+      display:  block;
+      position: absolute;
+      top: 3%;
+      right: 7%;
     }
-    header #Header-container #HeaderLogo{
-      width: 70px  ;
+      header #Header-container {
+      padding : 0px 15x !important;
     }
-    footer #footer-container #footerLogo{
-        width: 70px  ;
+    header #Header-container #HeaderLogo ,footer #footer-container #footerLogo{
+      width: 60px  ;
     }
+    
     
     header #HeaderNavLinks a {
       margin-left: 0px;

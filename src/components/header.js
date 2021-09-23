@@ -32,11 +32,12 @@ export default function Header() {
         document.querySelector('.mainMenu').style.display = 'flex';
 
         document.querySelector('.mainMenu').style.top = '0';
+
       }
 
       let close =()=>{
 
-        document.querySelector('.mainMenu').style.top = '-100%';
+        document.querySelector('.mainMenu').style.top = '-150%';
       };
 
   return (
@@ -48,6 +49,7 @@ export default function Header() {
           </div>
           <FontAwesomeIcon icon={faBars} onClick={show}  className="openMenu" size="3x" />
           <nav id="HeaderNavLinks" className="mainMenu">
+                  <FontAwesomeIcon icon={faTimes} onClick={close}  className="closeMenu" size="3x" />  
                   <Link to="#page-acceuill" className="navLinks" onClick={close} >Acceuil</Link>
                   <Link to="#apropos-page" className="navLinks" onClick={close}><p>A propos</p> </Link>
                   <Link to="#services-page" className="navLinks" onClick={close}>Services</Link>
