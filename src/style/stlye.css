@@ -95,6 +95,9 @@ html{
 }
 .apropos-description{
   padding-bottom: 40px;
+  text-align: justify !important;
+  text-justify: inter-word !important;
+  
 }
 .apropos {
   padding: 2% 0% !important;
@@ -182,8 +185,8 @@ max-width: 85%;
 justify-content: space-evenly;
 }
 #article-description , .sections-description{
-/*   text-align: justify !important;
-  text-justify: inter-word !important; */
+     text-align: justify !important;
+  text-justify: inter-word !important; 
 }
 #blog article {
 width: 250px;
@@ -212,11 +215,11 @@ background-color:#007A7A ;
     margin: 0;
 }
 .article-title::before{
-  content: "";
+/*   content: "";
   width: 55px;
   border-bottom: 3px solid rgb(233, 233, 233);
   height: 35px;
-  position: absolute;
+  position: absolute; */
 }
 .container-ikisquare{
   width: 420px;
@@ -377,9 +380,9 @@ letter-spacing: 4px;
 header #Header-container{
   max-width: 1600px ;
   display:  flex;
-  width: 100%;
-  padding: 5px 25px;
-  box-sizing: border-box;
+  width: 79%;
+/*   padding: 5px 25px;
+ */  box-sizing: border-box;
 }
 
 
@@ -704,14 +707,14 @@ header #Header-container #HeaderNavLinks a {
 
 #footer-container{
   box-sizing: border-box;
-  max-width: 1600px ;
+  max-width: 1600px;
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 79%;
   align-items: center;
   background-color: #E5E5E5;
   justify-content: space-between;
-  padding: 25px !important;
+  padding: 25px 0px !important;
 }
 footer{
   display: flex;
