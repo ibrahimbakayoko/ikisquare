@@ -132,7 +132,20 @@ html{
 .landingPage { 
   max-width: 100%;
 }
-
+#page-acceuill #ikisquare {
+  position: inherit;
+  display: flex;
+  flex-direction: column;
+  background-color: #121212;
+  min-width: 49%;
+  margin: auto;
+  align-items: center;
+  padding-right: 12px;
+  margin-top: 20px;
+  font-size: 45px;
+  height: 330px;
+ 
+}
 
 #blog article:first-child , #blog article:nth-child(3)  {
 
@@ -263,20 +276,7 @@ letter-spacing: 4px;
   height: 380px;
   } */
 
-  #page-acceuill #ikisquare {
-    position: inherit;
-    display: flex;
-    flex-direction: column;
-    background-color: #121212;
-    min-width: 49%;
-    margin: auto;
-    align-items: center;
-    padding-right: 12px;
-    margin-top: 20px;
-    font-size: 45px;
-    height: 330px;
-    width: 330px;
-}
+  
   /* .bottomright {
     background-color: #fff;
     width: 124px;
@@ -454,6 +454,23 @@ header #Header-container #HeaderNavLinks {
   justify-content: end ; 
   align-items: center;
   margin-left : auto;
+}
+
+}
+@media only screen and (min-width: 469px){
+  #page-acceuill #ikisquare {
+/*     position: inherit;
+    display: flex;
+    flex-direction: column;
+    background-color: #121212;
+    min-width: 49%;
+    margin: auto;
+    align-items: center;
+    padding-right: 12px;
+    margin-top: 20px;
+    font-size: 45px;
+    height: 330px; */
+    width: 330px;
 }
 
 }
@@ -921,6 +938,37 @@ margin-bottom: 0;
     display: flex;
     justify-content: center;
   }
+  @media only screen and (max-width: 469px) {
+      .container-ikisquare {
+        width: max-content ;
+        margin: auto !important;
+      }
+      #blog article{
+        padding: 10% 30px;
+      }
+      .slide{
+        margin: 0% 10%;
+      }
+      #ikisquare {
+        font-size: 20px;
+      }
+       .bottomright {
+        left: 65% !important ;
+    } 
+
+    .topleft {
+  
+      top: 115px;
+      left: -2.5% !important; 
+    
+  }
+      #apropos-page-content {
+        width: 80%;
+        padding: 120px 0px 20px 0px;
+      }
+      
+      
+  }
   @media only screen and (max-width: 810px) {
        
     #page-acceuill #ikisquare #ikisquare-button {
@@ -943,16 +991,17 @@ margin-bottom: 0;
     }
     #page-acceuill #ikisquare {
 
-      margin: 0;
+      margin: auto;
      
   }
   .bottomright {
-    left: 229px;
+    top: 22%;
+    left: 63.5%;
   }
   .topleft {
 
     top: 115px;
-    left: -9px;
+    left: 7%; 
   
 }
     .article-title{
