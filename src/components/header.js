@@ -45,7 +45,7 @@ export default function Header() {
       <div id="Header-container">
           <div id="HeaderLogo">
               <Link to="#page-acceuill"  >
-              <StaticImage   src="../images/logo.png"   width={95} alt="A Gatsby astronaut" /></Link>  
+              <StaticImage   src="../images/logo.svg"    alt="A Gatsby astronaut" /></Link>  
           </div>
           <FontAwesomeIcon icon={faBars} onClick={show}  className="openMenu" size="3x" />
           <nav id="HeaderNavLinks" className="mainMenu">

@@ -10,7 +10,7 @@ export default function Footer() {
     <footer id="footer">
         <div id="footer-container">
             <div id="footerLogo">
-                <StaticImage src="../images/logoFooter.png"  alt=""/>
+                <StaticImage src="../images/logoFooter.svg"  alt="Logo footer"/>
             </div>
             <p id="cpyright">
                 IKISQUARE &copy;2021
