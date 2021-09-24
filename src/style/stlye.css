@@ -948,6 +948,7 @@ margin-bottom: 0;
       }
       #blog article{
         padding: 10% 30px;
+          min-height: fit-content !important;
       }
       .slide{
         margin: 0% 10%;
