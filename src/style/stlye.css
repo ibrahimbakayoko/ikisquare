@@ -522,13 +522,15 @@ header #Header-container #HeaderNavLinks a {
  */}
 /*corriger*/
 #contact-page #contact-header-photo img {
-  width: 100%;
-  height: max-content !important;
+ /*  width: 100%;
+  height: max-content !important; */
 
 }
 /*corriger*/
 #contact-page #contact-header-photo img {
-  display: flex;
+/*   display: flex;
+ */
+  
 }
 
 #contact-page #contact-aside-form-container #contact-form-container div {
@@ -733,8 +735,8 @@ footer #footer-container #footerLogo , header #Header-container #HeaderLogo{
   justify-content: center;
 /*     padding: 15px 0px;
  */    align-items: center;
-  width: 70px;
-  display: flex;
+/*   width: 90px;
+ */  display: flex;
 }
 
 footer #footer-container  #footerNavIcons {
@@ -1098,8 +1100,8 @@ margin-bottom: 0;
       padding : 0px 15x !important;
     }
     header #Header-container #HeaderLogo ,footer #footer-container #footerLogo{
-      width: 60px  ;
-    }
+/*       width: 60px  ;
+ */    }
     
     
     header #HeaderNavLinks a {

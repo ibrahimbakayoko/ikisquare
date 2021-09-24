@@ -27,7 +27,7 @@ export default function Contact() {
         <section id="contact-page">
 
             <div id="contact-header-photo">
-                <StaticImage src="../images/contact-header.png" alt=""  style={{width : '100%'}} height={200} />
+                <StaticImage src="../images/contact-header.svg" alt="contact header" /*  style={{width : '100%'}} height={200} */ />
             </div>
         <div id="contact-aside-form-container">
             <div id="contact-form-container">
