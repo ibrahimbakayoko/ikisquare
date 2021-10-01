@@ -13,17 +13,18 @@ import * as React from "react"
 import Footer from "./Footer"
 import Header from "./header"
 import "../style/stlye.css"
-import Landingpage from "./Landing-page"
 
+/* import Landingpage from "./Landing-page"
+ */
 const Layout = ({ children }) => {
  
 
   return (
     <>
       <Header  />
-      <div className="landingPage">
+{/*       <div className="landingPage">
          <Landingpage/>
-      </div>
+      </div> */}
       <div className="layout">{children}</div>
       <Footer/> 
 

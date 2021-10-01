@@ -1,10 +1,14 @@
 import React , { useRef }  from 'react'
-import { StaticImage } from 'gatsby-plugin-image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { faFacebook, faInstagram, faLinkedin  } from "@fortawesome/free-brands-svg-icons"
+import {
+    faPhoneSquareAlt ,
+     faEnvelope
+  } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'gatsby'
 import emailjs from 'emailjs-com';
-
+import ContactImg from "../images/contact-header.svg"
+import { StaticImage } from 'gatsby-plugin-image'
 
 export default function Contact() {
 
@@ -15,6 +19,7 @@ export default function Contact() {
   
       emailjs.sendForm('service_arb76yq', 'template_dj2m2yf', form.current, 'user_TlVhDKjtUENvRj1TFcGkL')
         .then((result) => {
+            console.log(result)
             console.log(result.text);
         }, (error) => {
             console.log(error.text);
@@ -27,7 +32,9 @@ export default function Contact() {
         <section id="contact-page">
 
             <div id="contact-header-photo">
-                <StaticImage src="../images/contact-header.png" alt="image principal section"    />
+              <StaticImage src="../images/contact-header.svg" alt="contact header" /> 
+              {/*   <img src={ContactImg} alt="contact header" /> */}
+    
             </div>
         <div id="contact-aside-form-container">
             <div id="contact-form-container">
@@ -49,15 +56,18 @@ export default function Contact() {
             <aside>
                 <div id="contact-icons">
                     <div id="icons-container">
-                        <StaticImage src="../images/Group.png" alt="icon Telephone"/>
-                        <p>0475 93 76 79</p>
-                        <StaticImage src="../images//contact-icon.png" alt="icon Email"/>
-                        <p>ikisquare@gmail.com</p>
+                    <FontAwesomeIcon className="contact-icons" icon={faPhoneSquareAlt} />
+{/*                         <StaticImage src="../images/smartphone.svg" alt="Nombre gsm icon"/>
+ */}                        <p>0475 93 76 79</p>
+                     <FontAwesomeIcon className="contact-icons" icon={faEnvelope} />
+
+{/*                         <StaticImage src="../images/contact-icon.svg" alt="email contact icon"/>
+ */}                        <p>ikisquare@gmail.com</p>
     
                     </div>
                     <div id="social-media-icons">
-                    <Link to="https://www.linkedin.com/company/ikisquare/posts/?feedView=all" aria-label="notre page linkedin" > <FontAwesomeIcon className="social-media-icons" icon={faLinkedin} /></Link>
-                    <Link to="https://www.facebook.com/IKISQUAREAgency/" aria-label="notre page facebook" > <FontAwesomeIcon className="social-media-icons" icon={faFacebook} /></Link>
+                    <Link to="https://www.linkedin.com/company/ikisquare/posts/?feedView=all" > <FontAwesomeIcon className="social-media-icons" icon={faLinkedin} /></Link>
+                    <Link to="https://www.facebook.com/IKISQUAREAgency/" > <FontAwesomeIcon className="social-media-icons" icon={faFacebook} /></Link>
                     </div>
                 </div>
             </aside>

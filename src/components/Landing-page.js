@@ -5,6 +5,12 @@ import { Link } from 'gatsby'
 export default function Landingpage() {
     return (
         <div id="page-acceuill">
+        <section className="slide">
+        <div className="slidetext">
+            <h1 className="welcome-big">BIENVENU A IKISQUARE</h1>
+            <p className="welcome-medium">Agence web à liege specialisée dans l'eco conception de site internet sur mesure </p>
+        </div>
+        <div className="slideimage">
         <div className="container-ikisquare">
             <div className="topleft" ></div>            
             <div id="ikisquare">
@@ -15,10 +21,12 @@ export default function Landingpage() {
                     IKISQUARE
                 </p>
                 <p>WEB AGENCY <span className="tags">&#47;&gt;</span></p>
-                <Link to="#contact-page" id="ikisquare-button" aria-label="section contact">Contacter Nous </Link>
+                <Link to="#contact-page" id="ikisquare-button">Contacter Nous </Link>
             </div>
             <div className="bottomright" ></div>  
         </div>
+        </div>
+        </section>
 
         <section id="blog">
             <article>

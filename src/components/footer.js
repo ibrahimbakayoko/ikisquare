@@ -1,16 +1,18 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import "../style/footer.css"
+import Logofooter from "../images/logoFooter.svg"
+
 
 export default function Footer() {
     return (
     <footer id="footer">
         <div id="footer-container">
             <div id="footerLogo">
-                <StaticImage src="../images/logoFooter.png"  alt=""/>
+{/*                <StaticImage src="../images/logoFooter.svg"  alt="Logo footer"/>
+ */}               <img src={Logofooter} className="services-img" alt="services-con" />
             </div>
             <p id="cpyright">
                 IKISQUARE &copy;2021
