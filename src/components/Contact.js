@@ -35,6 +35,7 @@ export default function Contact() {
               <StaticImage src="../images/contact-header.svg" alt="contact header" /> 
               {/*   <img src={ContactImg} alt="contact header" /> */}
     
+
             </div>
         <div id="contact-aside-form-container">
             <div id="contact-form-container">
@@ -63,6 +64,7 @@ export default function Contact() {
 
 {/*                         <StaticImage src="../images/contact-icon.svg" alt="email contact icon"/>
  */}                        <p>ikisquare@gmail.com</p>
+
     
                     </div>
                     <div id="social-media-icons">

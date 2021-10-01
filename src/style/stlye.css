@@ -150,6 +150,7 @@ html{
  
 }
 
+
 #blog article:first-child , #blog article:nth-child(3)  {
 
 background-color:#007A7A ;
@@ -237,6 +238,7 @@ background-color:#007A7A ;
   margin-top: 10%;
   flex: 1;
 }
+
 
 /* .topleft {
     background-color: #007A7A;
@@ -389,6 +391,7 @@ header #Header-container{
 
 
 
+
     header #HeaderNavLinks {
       display: none ;
       width: 100% !important;
@@ -530,6 +533,7 @@ header #Header-container #HeaderNavLinks a {
  *//*     height: 200px;
  */}
 /*corriger*/
+
 
 
 #contact-page #contact-aside-form-container #contact-form-container div {
@@ -732,6 +736,7 @@ footer{
 footer #footer-container #footerLogo , header #Header-container #HeaderLogo{
 /*   height: ;
  */  justify-content: center;
+
 /*     padding: 15px 0px;
  */    align-items: center;
 /*   width: 90px;
@@ -1047,6 +1052,16 @@ margin-bottom: 0;
      min-height: min-content;
    }
 
+
+ /* le contenu du header avec le text du slide */
+ .slide{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: 79%;
+   /* background-color: red; */
+   margin: auto;
+   padding: 0 40px;
  }
 
  /* le contenu du header avec le text du slide */
@@ -1059,6 +1074,7 @@ margin-bottom: 0;
    margin: auto;
    padding: 0 40px;
  }
+
 
  .welcome-big{
    font-size: 43px;
@@ -1088,6 +1104,7 @@ margin-bottom: 0;
       position: fixed;
       right: 7%;
       top : 1.8%;
+
     }
     #Header-container .closeMenu {
       display:  block;
@@ -1100,6 +1117,7 @@ margin-bottom: 0;
     }
     header #Header-container #HeaderLogo ,footer #footer-container #footerLogo{
    }
+
     
     
     header #HeaderNavLinks a {

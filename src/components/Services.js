@@ -15,6 +15,7 @@ export default function Services() {
                 <div class="services flex-container wrap"  id="services-firstchild">
                     <div class="bg-bk flex-item">
                        <img src={Ux}  className="services-img" alt="services-con"/>
+
                         <p class="services-titles">UX/UI design</p>
                         <p class="services-description sections-description">
                             L’éco-conception passe aussi et surtout par le design. Un design épuré et simple permettra à vos utilisateurs de tomber rapidement sur ce qu’ils désirent trouver en consultant votre page.
@@ -22,6 +23,7 @@ export default function Services() {
                     </div>
                     <div class="flex-item">
                         <img src={Internet}  className="services-img" alt="services-con"/>
+                     
                         <p class="services-titles ">Création site internet</p>
                         <p class="services-description sections-description">
                             Ah le respect du code propre ! Et oui, vous ne voyez pas le code de votre interface, mais nous OUI ! Nous savons pourquoi votre site met trois heures à charger, et ce n’est pas toujours un problème de connexion {/* ;)  */}                           
@@ -30,6 +32,7 @@ export default function Services() {
                     <div class="bg-bk flex-item">
                         <img src={RedContenu} className="services-img" alt="services-con" />
                         
+
                         <p class="services-titles">Rédaction de contenu</p>
                         <p class="services-description sections-description">
                             Nous vous accompagnons dans la rédaction des contenus de votre site web. Comme le dit l’adage, « la plume est plus forte que l’épée ». Si votre plume est déplumée, votre stratégie marketing peut se révèler être affectée d’inefficacité.                            
@@ -38,6 +41,7 @@ export default function Services() {
                     <div class="flex-item">
 {/*                         <StaticImage src="../images/services/hebergement.svg"  className="services-img" alt="services-con"/>
  */}                        <img src={Hebergement} className="services-img" alt="services-con" />
+
 
                         <p class="services-titles">Hébergement site web</p>
                         <p class="services-description sections-description">
@@ -48,6 +52,7 @@ export default function Services() {
 {/*                         <StaticImage src="../images/services/seo.svg"  className="services-img" alt="services-con"/>
  */}                        <img src={SeoImage} className="services-img" alt="services-con" />
 
+
                         <p class="services-titles">Réferencement SEO</p>
                         <p class="services-description sections-description">
                             Le référencement va permettre à votre site d’être connu et reconnu par les moteurs de recherches. Et oui, vous vous faites scanner et juger par des robots ! Laissez-nous vous aider à les satisfaire {/* ;) */}                             
@@ -56,6 +61,7 @@ export default function Services() {
                     <div class="flex-item">
 {/*                         <StaticImage src="../images/services/ecopense.svg"  className="services-img" alt="services-con"/>
  */}                        <img src={Ecopense} className="services-img" alt="services-con" />
+
 
                         <p class="services-titles">Eco-conception</p>
                         <p class="services-description sections-description">

@@ -13,6 +13,7 @@ export default function Footer() {
             <div id="footerLogo">
 {/*                <StaticImage src="../images/logoFooter.svg"  alt="Logo footer"/>
  */}               <img src={Logofooter} className="services-img" alt="services-con" />
+
             </div>
             <p id="cpyright">
                 IKISQUARE &copy;2021
