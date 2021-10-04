@@ -8,7 +8,7 @@ import {
 import { Link } from 'gatsby'
 import emailjs from 'emailjs-com';
 // import ContactImg from "../images/contact-header.svg"
-import { StaticImage } from 'gatsby-plugin-image'
+// import { StaticImage } from 'gatsby-plugin-image'
 
 export default function Contact() {
 
@@ -38,7 +38,7 @@ export default function Contact() {
                 <div className="calltoaction-title">
                     <h1>L'ECO CONCEPTION EST AU CENTRE DE NOS VALEURS</h1>
                 </div>
-                <div className="calltoaction-content">Vous avez un projet ? n'attendez plus et parlons en !</div>
+                <div className="calltoaction-content">Vous avez un projet ? n'attendez plus, parlons en !</div>
 
              </div> 
               

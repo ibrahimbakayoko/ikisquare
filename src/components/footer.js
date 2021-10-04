@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import "../style/footer.css"
-import Logofooter from "../images/logoFooter.svg"
+// import Logofooter from "../images/logoFooter.svg"
 
 
 export default function Footer() {
