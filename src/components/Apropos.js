@@ -4,7 +4,7 @@ export default function Apropos() {
     return (
         <section id="apropos-page">
         <div id="apropos-page-content">
-            <h1 class="sections-title">A PROPOS</h1>
+            <h1 class="sections-title"><span className="first-title" >A </span> PROPOS</h1>
 
             <div class="apropos flex-container wrap">
                 <div class="apropos-content flex-item">
