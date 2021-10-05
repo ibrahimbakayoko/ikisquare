@@ -74,7 +74,7 @@ export default function Header() {
           <FontAwesomeIcon icon={faBars} onClick={show} className="openMenu" size="3x" />
           <nav id="HeaderNavLinks" className="mainMenu">
             <FontAwesomeIcon icon={faTimes} onClick={close} className="closeMenu" size="3x" />
-            {/* <Link to="/blog" className="navLinks" onClick={close} >Blog</Link> */}
+             <Link to="/blog" className="navLinks" onClick={close} >Blog</Link> 
             <Link to="/#page-acceuill" className="navLinks" onClick={close} >Accueil</Link>
             <Link to="/#apropos-page" className="navLinks" onClick={close}><p>A propos</p> </Link>
             <Link to="/#services-page" className="navLinks" onClick={close}>Services</Link>

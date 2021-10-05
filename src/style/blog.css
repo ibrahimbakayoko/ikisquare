@@ -1,3 +1,79 @@
-#rendered-msgs{
-    color: black;
+/* The containers css */
+#blog-page{
+    margin: auto;
+    color: #015757;
+    height: 100vh; /*à changer après*/
+}
+#blog-page h1{
+    color:rgb(238, 231, 238);
+}
+
+body {
+    background-color: #222222;
+}
+#all-articles{
+}
+/*End The containers css */
+
+
+
+
+.single-article{/* or Article tag */
+    display: flex;
+    max-height: max-content;
+    background-color:#ECECEC;
+    max-width: 40%;
+    border-radius: 10px;
+/*     margin: auto;
+ */
+    margin-top: 50px;
+    margin-left: 50px;
+}
+ .article-img{
+     width: 50%;
+ }
+ .article-img img{
+    min-width: 100% ;
+    min-height: 100%;
+    border-radius: 10px 10px 10px 10px;
+}
+.article-card-container{
+    display: flex;
+    width: 50%;
+}
+.article-card-elements-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+}
+.article_card-title{
+    font-size: 30px;
+    color: #015757 !important;
+}
+.article-briefDesc{
+    color : #333 ; 
+    font-size: 18px;
+}
+.article-hashTags-container{
+    display: flex;
+    flex-direction: row;
+}
+.hashTag-wrapper{
+    display: flex;
+    flex-direction: row;
+    margin-right: 2.5%;
+    background-color: #271212;
+    padding : 2% 3%
+
+}
+.hashTagSymbol{
+
+}
+.hashTag-KeyWord{
+    margin: 0;
+    color: wheat;
+}
+.article-publishDate{
+    
 }

@@ -3,10 +3,10 @@
 
 
 /* modification brahima */
-.contact-header{
+/* .contact-header{
   height: 36px;
   background-color: #000;
-}
+} */
 
 .card-header{
   border-bottom: solid 3px white;
@@ -382,7 +382,7 @@ letter-spacing: 4px;
   #page-acceuill {
     display: flex ;
     flex-direction: column;
-    background: linear-gradient(180deg, #000000 0.21%, #007A7A 100%);
+    background: linear-gradient(180deg, #272727 1.5%, #007A7A 98.5%);
     height: auto;
     
     }
@@ -442,7 +442,7 @@ letter-spacing: 4px;
 
   header{
     display: flex;
-     background-color: black;
+     background-color: #272727;
     width: 100% ;
     justify-content: center;
     align-content: end;
@@ -472,8 +472,8 @@ header #Header-container{
       width: 100% !important;
       justify-content: end !important ;
       align-items: center;
-      background: #000;
-  }
+/*       background: #000;
+ */  }
 .sticky {
   z-index: 999;
   position: fixed;
