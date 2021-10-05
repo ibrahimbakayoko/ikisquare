@@ -59,7 +59,7 @@ export default function Landingpage() {
                     Afin de contribuer
                 </div>
                 <div className="card-body">
-                A la conscientisation du plus grand nombre d’entre-nous, avec l’objectif  de construire ensembles un futur du numérique qui serait plus respecteux de l’environnement, mais aussi plus éthique.
+                A la conscientisation du plus grand nombre d’entre-nous, avec l’objectif de construire ensembles un futur du numérique qui serait plus respectueux de l’environnement, mais aussi plus éthique.
                 </div>                 
             </article>             
         </section>
