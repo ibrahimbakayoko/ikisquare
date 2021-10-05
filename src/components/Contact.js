@@ -36,9 +36,9 @@ export default function Contact() {
         <div className="contact-calltoaction">
              <div className="banner-inner">
                 <div className="calltoaction-title">
-                    <h1>L'ECO CONCEPTION EST AU CENTRE DE NOS VALEURS</h1>
+                    <h1>L'ECO-CONCEPTION EST AU CENTRE DE NOS VALEURS</h1>
                 </div>
-                <div className="calltoaction-content">Vous avez un projet ? n'attendez plus, parlons en !</div>
+                <div className="calltoaction-content">Vous avez un projet ? N'attendez plus, parlons en !</div>
 
              </div> 
               
