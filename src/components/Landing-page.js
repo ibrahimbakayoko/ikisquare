@@ -21,7 +21,7 @@ export default function Landingpage() {
                     IKISQUARE
                 </p>
                 <p>WEB AGENCY <span className="tags">&#47;&gt;</span></p>
-                <Link to="#contact-page" id="ikisquare-button">CONTACTEZ NOUS </Link>
+                <Link to="#contact-page" id="ikisquare-button">Contactez-nous </Link>
             </div>
             <div className="bottomright" ></div>  
         </div>
