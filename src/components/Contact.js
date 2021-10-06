@@ -1,9 +1,9 @@
 import React , { useRef }  from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faLinkedin  } from "@fortawesome/free-brands-svg-icons"
+import { faFacebookSquare, faLinkedin  } from "@fortawesome/free-brands-svg-icons"
 import {
-    faPhoneSquareAlt ,
-     faEnvelope
+    faEnvelope,
+    faMobileAlt
   } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'gatsby'
 import emailjs from 'emailjs-com';
@@ -36,11 +36,11 @@ export default function Contact() {
         <div className="contact-calltoaction">
              <div className="banner-inner">
                 <div className="calltoaction-title">
-                    <h1>L'ECO-CONCEPTION EST AU CENTRE DE NOS VALEURS</h1>
+                    <h1> L'eco-conception est au centre de nos valeurs</h1>
                 </div>
-                <div className="calltoaction-content">Vous avez un projet ? N'attendez plus, parlons en !</div>
+                {/* <div className="calltoaction-content">Vous avez un projet ? N'attendez plus, parlons en !</div> */}
 
-             </div> 
+             </div>   
               
         </div> 
         
@@ -67,19 +67,19 @@ export default function Contact() {
             <aside>
                 <div id="contact-icons">
                     <div id="icons-container">
-                    <FontAwesomeIcon className="contact-icons" icon={faPhoneSquareAlt} />
+                    <FontAwesomeIcon className="contact-icons" icon={faMobileAlt} />
 {/*                         <StaticImage src="../images/smartphone.svg" alt="Nombre gsm icon"/>
  */}                        <p>+32 475 93 76 79</p>
                      <FontAwesomeIcon className="contact-icons" icon={faEnvelope} />
 
 {/*                         <StaticImage src="../images/contact-icon.svg" alt="email contact icon"/>
- */}                        <p>ikisquare@gmail.com</p>
+ */}                        <p>ikisquareagency@gmail.com</p>
 
     
                     </div>
                     <div id="social-media-icons">
                     <Link to="https://www.linkedin.com/company/ikisquare/posts/?feedView=all" > <FontAwesomeIcon className="social-media-icons" icon={faLinkedin} /></Link>
-                    <Link to="https://www.facebook.com/IKISQUAREAgency/" > <FontAwesomeIcon className="social-media-icons" icon={faFacebook} /></Link>
+                    <Link to="https://www.facebook.com/IKISQUAREAgency/" > <FontAwesomeIcon className="social-media-icons" icon={faFacebookSquare} /></Link>
                     </div>
                 </div>
             </aside>

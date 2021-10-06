@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faFacebookSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import "../style/footer.css"
 // import Logofooter from "../images/logoFooter.svg"
 
@@ -34,8 +34,8 @@ export default function Footer() {
             </p>
 
             <nav id="footerNavIcons">
-                    <Link to="https://www.linkedin.com/company/ikisquare" > <FontAwesomeIcon className="footerNavIcons" icon={faLinkedin} /></Link>
-                    <Link to="https://www.facebook.com/IKISQUAREAgency/" > <FontAwesomeIcon className="footerNavIcons" icon={faFacebook} /></Link>
+                    {/* <Link to="https://www.linkedin.com/company/ikisquare" > <FontAwesomeIcon className="footerNavIcons" icon={faLinkedin} /></Link>
+                    <Link to="https://www.facebook.com/IKISQUAREAgency/" > <FontAwesomeIcon className="footerNavIcons" icon={faFacebookSquare} /></Link> */}
             </nav>
         </div>
     </footer>

@@ -24,7 +24,7 @@ export default function Services() {
                     <div className="flex-item">
                         <img src={Internet}  className="services-img" alt="services-con"/>
                      
-                        <p className="services-titles ">Création site internet</p>
+                        <p className="services-titles ">Création de sites internets</p>
                         <p className="services-description sections-description">
                             Ah le respect du code propre ! Et oui vous, vous ne voyez pas le code de votre interface, mais nous OUI ! Nous savons pourquoi votre site met trois heures à charger, et ce n’est pas toujours un problème de connexion ;)                           
                         </p>
@@ -53,7 +53,7 @@ export default function Services() {
  */}                        <img src={SeoImage} className="services-img" alt="services-con" />
 
 
-                        <p className="services-titles">Réferencement SEO</p>
+                        <p className="services-titles">Référencement SEO</p>
                         <p className="services-description sections-description">
                             Le référencement naturel va permettre à votre site d’être connu et reconnu par les moteurs de recherches. Et oui, vous vous faites scanner et juger par des robots ! Laissez-nous vous aider à les satisfaire ;)                             
                         </p>

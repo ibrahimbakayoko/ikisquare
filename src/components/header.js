@@ -2,6 +2,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import {
   faBars,
   faTimes
@@ -56,7 +57,7 @@ export default function Header() {
 
         <div id="Header-container">
           <div id="HeaderLogo">
-            <Link to="#page-acceuill"  >
+            <Link to="#page-accueil"  >
               {/*                <StaticImage src="../images/logo.svg" alt="" />    */}  
              <svg width="70" height="70" viewBox="0 0 379 337" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M102.435 139.149L163.03 239.723H272.679L187.557 119.861H102.435V139.149Z" fill="#007A7A" />
@@ -75,10 +76,12 @@ export default function Header() {
           <nav id="HeaderNavLinks" className="mainMenu">
             <FontAwesomeIcon icon={faTimes} onClick={close} className="closeMenu" size="3x" />
             {/* <Link to="/blog" className="navLinks" onClick={close} >Blog</Link> */}
-            <Link to="/#page-acceuill" className="navLinks" onClick={close} >Accueil</Link>
+            <Link to="/#page-accueil" className="navLinks" onClick={close} >Accueil</Link>
             <Link to="/#apropos-page" className="navLinks" onClick={close}><p>A propos</p> </Link>
             <Link to="/#services-page" className="navLinks" onClick={close}>Services</Link>
             <Link to="/#contact-page" className="navLinks" onClick={close} >Contact</Link>
+            <Link to="https://www.linkedin.com/company/ikisquare" > <FontAwesomeIcon className="footerNavIcons" icon={faLinkedin} /></Link>
+                    <Link to="https://www.facebook.com/IKISQUAREAgency/" > <FontAwesomeIcon className="footerNavIcons" icon={faFacebookSquare} /></Link>
 
           </nav>
         </div>

@@ -5,7 +5,7 @@
 /* modification brahima */
 .contact-header{
   height: 36px;
-  background-color: #000;
+  background-color: #121212;
 }
 
 .card-header{
@@ -44,7 +44,7 @@
   background-image: url('../images/banner-img.jpg');
   background-size: cover;
   background-position: center center;
-  height: 150px;
+  height: 300px;
   width: 100%;
   position: relative;
 }
@@ -53,23 +53,27 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.2) !important;
+  /* background-color: rgba(255, 255, 255, 0.2) !important; */
   width: 100%;
   height: 100%;
 
 }
 
-.banner-inner h1{
-  color: #fff;
-  font-weight: 400;
+.banner-inner h1 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 43px;
 }
 
-.calltoaction-title{
-  color: black;
+.calltoaction-title {
+  /* color: black; */
   width: 70%;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.3) !important;
+  /* background-color: rgba(255, 255, 255, 0.2) !important; */
   margin: auto;
+  -moz-box-shadow: 1px 1px 3px 2px #007a7a;
+  -webkit-box-shadow: 1px 1px 3px 2px #007a7a;
+  box-shadow: 1px 1px 3px 2px #007a7a;
 }
 
 .calltoaction-content{
@@ -213,7 +217,7 @@ html{
 /* .landingPage { 
   max-width: 100%;
 } */
-#page-acceuill #ikisquare {
+#page-accueil #ikisquare {
   position: inherit;
   display: flex;
   flex-direction: column;
@@ -379,15 +383,15 @@ letter-spacing: 4px;
 }
 
 
-  #page-acceuill {
+  #page-accueil {
     display: flex ;
     flex-direction: column;
-    background: linear-gradient(180deg, #000000 0.21%, #007A7A 100%);
+    background: linear-gradient(180deg, #121212 0.21%, #007A7A 100%);
     height: auto;
     
     }
     
-    #page-acceuill #ikisquare #ikisquare-button {
+    #page-accueil #ikisquare #ikisquare-button {
      font-family: 'Roboto', sans-serif;
     
       border: 3px solid #007A7A;
@@ -400,12 +404,12 @@ letter-spacing: 4px;
     text-decoration: none;
     margin-top : 15px
     }
-    #page-acceuill #ikisquare #ikisquare-button:hover {
+    #page-accueil #ikisquare #ikisquare-button:hover {
       background-color:  #007A7A;
       color: white;
       cursor: pointer;
     }
-    #page-acceuill #ikisquare #ikisquare-button:active {
+    #page-accueil #ikisquare #ikisquare-button:active {
       background-color:  #007A7A;
       color: white;
       cursor: pointer;
@@ -442,7 +446,7 @@ letter-spacing: 4px;
 
   header{
     display: flex;
-     background-color: black;
+     background-color: #121212;
     width: 100% ;
     justify-content: center;
     align-content: end;
@@ -472,9 +476,10 @@ header #Header-container{
       width: 100% !important;
       justify-content: end !important ;
       align-items: center;
-      background: #000;
+      background: #121212;
   }
 .sticky {
+  background-color: #121212;
   z-index: 999;
   position: fixed;
   top: 0;
@@ -541,7 +546,7 @@ header #Header-container #HeaderNavLinks {
 
 }
 @media only screen and (min-width: 469px){
-  #page-acceuill #ikisquare {
+  #page-accueil #ikisquare {
 /*     position: inherit;
     display: flex;
     flex-direction: column;
@@ -676,7 +681,7 @@ header #Header-container #HeaderNavLinks a {
    position: relative ;
   left:  -50% ;
   display: flex;
-  background-color:#0c120d;
+  background-color:#121212;
   flex-direction: column ;
   align-items:  center; 
   height: max-content;
@@ -694,8 +699,7 @@ header #Header-container #HeaderNavLinks a {
   width: 200px ;
 }
 /*il faut corriger*/
-#icons-container{
-}
+
 .contact-icons{
   font-size: 40px !important;
   color: #007A7A;
@@ -754,7 +758,8 @@ footer #footer-container  #footerNavIcons {
 }
 .footerNavIcons {
   font-size: 30px !important;
-  color: #007A7A;
+  /* color: #007A7A; */
+  color: #fff;
 }
 
 .footerNavIcons:hover {
@@ -773,7 +778,7 @@ footer #footer-container  #footerNavIcons a {
 
 /*SERVICES PAGE*/
 .bg-bk , .bg-bk img{
-  background: #0c120d !important;
+  background: #121212 !important;
 color : white ;
 }
 
@@ -928,7 +933,7 @@ margin-bottom: 0;
   }
   @media only screen and (max-width: 810px) {
        
-    #page-acceuill #ikisquare #ikisquare-button {
+    #page-accueil #ikisquare #ikisquare-button {
   
      margin-top : 10px
      }
@@ -946,7 +951,7 @@ margin-bottom: 0;
       justify-content: center;
       flex-direction: column;
     }
-    #page-acceuill #ikisquare {
+    #page-accueil #ikisquare {
 
       margin: auto;
      
