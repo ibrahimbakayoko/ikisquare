@@ -1,8 +1,12 @@
 /* The containers css */
 #blog-page{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
     margin: auto;
     color: #015757;
-    height: 100vh; /*à changer après*/
+    height: max-content; /*à changer après*/
 }
 #blog-page h1{
     color:rgb(238, 231, 238);
@@ -11,7 +15,13 @@
 body {
     background-color: #222222;
 }
-#all-articles{
+#HighlightedArticles{
+    display: flex;
+    flex-direction: row;
+}
+#AllArticles{
+    display: flex;
+    flex-direction: row;
 }
 /*End The containers css */
 
@@ -41,6 +51,12 @@ body {
     display: flex;
     width: 50%;
 }
+#highlighted_single-article{
+    display:  flex;
+    justify-content: center;
+       background-color:  #015757 !important;
+
+}
 .article-card-elements-wrapper{
     display: flex;
     flex-direction: column;
@@ -51,9 +67,16 @@ body {
     font-size: 30px;
     color: #015757 !important;
 }
+#highlighted_article_card-title{
+    color: rgb(211, 208, 208) !important;
+}
 .article-briefDesc{
     color : #333 ; 
     font-size: 18px;
+}
+#highlighted_article-briefDesc{
+    color : rgb(211, 208, 208) ; 
+  
 }
 .article-hashTags-container{
     display: flex;
