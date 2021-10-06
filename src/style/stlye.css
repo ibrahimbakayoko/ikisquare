@@ -7,7 +7,6 @@
   height: 36px;
   background-color: #121212;
 }
-
 .card-header{
   border-bottom: solid 3px white;
   padding: 5.2% 30px;
@@ -15,11 +14,9 @@
   text-align: center;
   text-transform: uppercase;
 }
-
 .card-body{
    padding: 10.2% 30px;
  }
-
  /* global title */
  .first-title{
   background-color: #007A7A;
@@ -29,17 +26,12 @@
   border-bottom-left-radius: 50px;
   margin-right: 13px;
  }
-
  .copyright-annee{
    color: #007A7A;
  }
  /* end global title */
-
 /* fin animation */
-
-
 /* call to action */
-
 .contact-calltoaction{
   background-image: url('../images/banner-img.jpg');
   background-size: cover;
@@ -48,7 +40,6 @@
   width: 100%;
   position: relative;
 }
-
 .banner-inner{
   display: flex;
   flex-direction: column;
@@ -58,13 +49,11 @@
   height: 100%;
 
 }
-
 .banner-inner h1 {
     color: #fff;
     font-weight: 400;
     font-size: 43px;
 }
-
 .calltoaction-title {
   /* color: black; */
   width: 70%;
@@ -75,19 +64,13 @@
   -webkit-box-shadow: 1px 1px 3px 2px #007a7a;
   box-shadow: 1px 1px 3px 2px #007a7a;
 }
-
 .calltoaction-content{
   color: white;
   text-align: center;
   margin: auto;
   font-size: 22px;
 }
-
-
 /* end call to action */
-
-
-
 body{
   margin: 0;
   color : white;
@@ -102,43 +85,11 @@ body{
   margin: 0 auto;
 
 }
-
 html{
   scroll-behavior: smooth;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
 /*A PROPOS*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #apropos-page{
   background-color:   #E5E5E5;
   display: flex;
@@ -184,36 +135,7 @@ html{
 .apropos {
   padding: 2% 0% !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*PAGE Acceuill*/
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* .landingPage { 
   max-width: 100%;
 } */
@@ -228,15 +150,11 @@ html{
   padding-right: 12px;
   margin-top: 20px;
   font-size: 45px;
-  height: 330px;
- 
+  height: 330px; 
 }
-
-#blog article:first-child , #blog article:nth-child(3)  {
-
+#blog article:first-child , #blog article:nth-child(3){
 background-color:#007A7A ;
 }
-
 #ikisquare p:nth-child(2){
   font-weight: 300;
   margin-top: 0px;
@@ -250,9 +168,6 @@ background-color:#007A7A ;
   letter-spacing: 0px !important;;
   font-weight: 400;
  }
-
-
-
 .tags{
   color :#007A7A;
 }
@@ -282,13 +197,9 @@ min-height: max-content;
 min-width: 200px;
 border-radius: 10px;
 }
-
-#blog article:first-child , #blog article:nth-child(3)  {
-
+#blog article:first-child , #blog article:nth-child(3){
 background-color:#007A7A ;
 }
-
-
 .article-title{
   font-family: 'Roboto', sans-serif;
   font-size:  20px ;
@@ -296,40 +207,19 @@ background-color:#007A7A ;
     padding-bottom: 7%;
     margin: 0;
 }
-.article-title::before{
-/*   content: "";
-  width: 55px;
-  border-bottom: 3px solid rgb(233, 233, 233);
-  height: 35px;
-  position: absolute; */
-}
 .container-ikisquare{
   width: 420px;
   z-index: 0;
   margin: 0 auto;
 }
-
 .slideimage{
   flex: 1;
   z-index: 0;
 }
-
-
 .slide .slidetext{
   margin-top: 10%;
   flex: 1;
 }
-
-/* .topleft {
-    background-color: #007A7A;
-    width: 124px;
-    height: 124px;
-    top: 134px;
-    left: 32px;
-    position: relative;
-    z-index: -1;
-} */
-
 .topleft {
   background-color: #007A7A;
   width: 124px;
@@ -339,40 +229,12 @@ background-color:#007A7A ;
   position: relative;
   z-index: -1;
 }
-
 #ikisquare p:first-child {
 /*  padding-top : 10px  !important ;
  */ padding-bottom: 0px;
 letter-spacing: 4px;
 }
-
-/* #page-acceuill #ikisquare{
-  position: inherit;
-  display:  flex ;
-  flex-direction: column;  
-   background-color: #121212 ; 
-  min-width: 49%;
-    margin : auto;
-    align-items: center;
-  padding-top: 10px;
-  padding-right: 5px;
-    margin-top : 20px;
-  font-size: 45px;
-  height: 380px;
-  } */
-
-  
-  /* .bottomright {
-    background-color: #fff;
-    width: 124px;
-    height: 124px;
-    bottom: 113px;
-    left: 309px;
-    position: relative;
-    z-index: -1;
-  } */
-
-  .bottomright {
+.bottomright {
     background-color: #fff;
     width: 124px;
     height: 124px;
@@ -381,8 +243,6 @@ letter-spacing: 4px;
     position: relative;
     z-index: -1;
 }
-
-
   #page-accueil {
     display: flex ;
     flex-direction: column;
@@ -414,36 +274,7 @@ letter-spacing: 4px;
       color: white;
       cursor: pointer;
     }
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
   /*header*/
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
   header{
     display: flex;
      background-color: #121212;
