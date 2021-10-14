@@ -30,7 +30,7 @@ export default function Footer() {
 
             </div>
             <p id="cpyright">
-                 IKISQUARE 2021 &copy; <span className="copyright-annee"> All Rights Reserved </span>
+                 <span>IKISQUARE 2021 &copy;</span> <span className="copyright-annee"> All Rights Reserved </span>
             </p>
 
             <nav id="footerNavIcons">

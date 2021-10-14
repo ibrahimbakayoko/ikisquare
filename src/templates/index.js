@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import Layout from "../components/layout"
+import SingleListedArticle from "../components/SingleListedArticle"
 
 const NavLink = props => {
   if (!props.test) {
@@ -15,23 +16,26 @@ const IndexPage = ({ pageContext }) => {
   const { group, index, first, last, pageCount } = pageContext
   const previousUrl = index - 1 == 1 ? '/blog' : pathPrefix+(index - 1).toString()
   const nextUrl = pathPrefix + (index + 1).toString()
-
+  const strapiPathPrefix = "http://localhost:1337"
   return (
     <Layout>
       <h4>{pageCount} Pages</h4>
 
       {group.map(({ node }) => (
-        <div className="blogListing">
-          <div className="blogUrl" >
-            <Link to={"/"+node.articleTitle.replace(/\s/g,'-')} > {node.articleTitle}</Link>
-          </div>
-        </div>
+       
+        <SingleListedArticle
+          articleUrl={"/"+node.articleTitle.replace(/\s/g,'-')}
+          articleTitle={node.articleTitle}
+          articleImgSrc={strapiPathPrefix + node.articleImages.url}
+          publishedBy={node.article_publisher.publisher_name}
+          publishedImgSrc={strapiPathPrefix + node.article_publisher.publisher_img.url}
+        />
+          
       ))}
       <div className="previousLink">
         <NavLink test={first} url={previousUrl} text="Go to Previous Page" />
       </div>
       <div className="nextLink">
-        {alert(index)}
         <NavLink test={last} url={nextUrl} text="Go to Next Page" />
       </div>
     </Layout>
