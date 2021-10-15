@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
-import { graphql } from "gatsby";
+//import { graphql } from "gatsby";
 import Layout from "../components/layout"
 import React, { Component } from 'react'
-
+/*
 const Blog = ({ data}) => {
      //const articles = data.allStrapiArticles.edges.node;
      console.log("SO \n\n here \n is \n  the new \n")
@@ -33,5 +33,5 @@ export const query = graphql`
     }
   }
 ` 
-  export default Blog ;
+  export default Blog ;*/
   

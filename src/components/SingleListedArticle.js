@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
+/*
 export default function SingleListedArticle(props) {
     return (
         <div  className="blogListing">
@@ -15,9 +15,9 @@ export default function SingleListedArticle(props) {
                 </p>
                 <div id="publishedByContainer">
                     <img src={props.publishedImgSrc} alt="pas d'image" width={200} heigh={200} />
-                    <p> published by : {props.publishedBy} </p>
+                    <p > published by : {props.publishedBy} </p>
                 </div>
            </div>
         </div>
     )
-}
+}*/

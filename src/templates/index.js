@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import Layout from "../components/layout"
-import SingleListedArticle from "../components/SingleListedArticle"
-
+//import SingleListedArticle from "../components/SingleListedArticle"
+/*
 const NavLink = props => {
   if (!props.test) {
     return <Link to={props.url}>{props.text}</Link>
@@ -41,4 +41,4 @@ const IndexPage = ({ pageContext }) => {
     </Layout>
   )
 }
-export default IndexPage
+export default IndexPage*/

@@ -36,7 +36,7 @@ module.exports = {
       options: {
         apiURL: `http://localhost:1337`,
         queryLimit: 1000, // Defaults to 100
-         collectionTypes: [`Articles`,`article-publishers`],
+       //  collectionTypes: [`Articles`,`article-publishers`],
         /* singleTypes: [`home-page`, `contact`], */
       },
     }

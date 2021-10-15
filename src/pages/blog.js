@@ -5,7 +5,7 @@ import "../style/blog.css"
 //import { paginate } from 'gatsby-awesome-pagination';
 
 
- 
+ /*
 export default function blog() {
   return (
     <div>
@@ -15,4 +15,4 @@ export default function blog() {
     </div>
   )
 }
- 
+ */

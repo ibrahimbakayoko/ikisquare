@@ -1,5 +1,5 @@
 
- const createPaginatedPages = require('gatsby-paginate')
+ /* const createPaginatedPages = require('gatsby-paginate')
  const path = require('path');
 
  exports.createPages = ({ graphql, actions: { createPage } }) => {
@@ -48,3 +48,4 @@
 
   })
 }
+*/
