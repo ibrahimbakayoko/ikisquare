@@ -1,3 +1,42 @@
 #rendered-msgs{
     color: black;
 }
+.blogListing{
+    color: blueviolet;
+    font-size: 40px;
+}
+.article-page-body{
+    font-size:  40px;
+    color: brown;
+}
+#propstext{
+    display:   none;
+    padding : 15px ;
+    color: burlywood ;
+    background-color: darkblue;
+}
+.previousLink,.nextLink{
+    padding : 15px ;
+    color: firebrick !important;
+    background-color: forestgreen;
+}
+.blogListing{
+    display: flex;
+}
+#publishedByContainer {
+    background-color: lightseagreen;
+    display: flex;
+    flex-direction: row;
+}
+#publishedByContainer img{
+    border-radius: 50%;
+}
+.blogUrl {
+    width: 50%;
+    background-color: lightcoral;
+    color: black ;
+}
+#blogArticleDetails{
+    width: 50%;
+    background-color:lawngreen ;
+}

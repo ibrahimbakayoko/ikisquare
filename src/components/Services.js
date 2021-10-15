@@ -24,9 +24,9 @@ export default function Services() {
                     <div className="flex-item">
                         <img src={Internet}  className="services-img" alt="services-con"/>
                      
-                        <p className="services-titles ">Création site internet</p>
+                        <p className="services-titles ">Création de sites internets</p>
                         <p className="services-description sections-description">
-                            Ah le respect du code propre ! Et oui, vous ne voyez pas le code de votre interface, mais nous OUI ! Nous savons pourquoi votre site met trois heures à charger, et ce n’est pas toujours un problème de connexion {/* ;)  */}                           
+                            Ah le respect du code propre ! Et oui vous, vous ne voyez pas le code de votre interface, mais nous OUI ! Nous savons pourquoi votre site met trois heures à charger, et ce n’est pas toujours un problème de connexion ;)                           
                         </p>
                     </div>
                     <div className="bg-bk flex-item">
@@ -53,9 +53,9 @@ export default function Services() {
  */}                        <img src={SeoImage} className="services-img" alt="services-con" />
 
 
-                        <p className="services-titles">Réferencement SEO</p>
+                        <p className="services-titles">Référencement SEO</p>
                         <p className="services-description sections-description">
-                            Le référencement va permettre à votre site d’être connu et reconnu par les moteurs de recherches. Et oui, vous vous faites scanner et juger par des robots ! Laissez-nous vous aider à les satisfaire {/* ;) */}                             
+                            Le référencement naturel va permettre à votre site d’être connu et reconnu par les moteurs de recherches. Et oui, vous vous faites scanner et juger par des robots ! Laissez-nous vous aider à les satisfaire ;)                             
                         </p>
                     </div>
                     <div className="flex-item">
@@ -65,7 +65,7 @@ export default function Services() {
 
                         <p className="services-titles">Eco-conception</p>
                         <p class="services-description sections-description">
-                            Vous avez l’âme du sauveur écolo, ca se ressent dans votre stratégie de communication, dans vos engagements sur les RS. C’est super de surfer sur la tendance...mais êtes-vous cependant réellement conscients de la pollution numérique que vous générez ?                        
+                            Vous avez l’âme d'un écolo et voulez agir pour la planète. Votre stratégie de communication est très claire sur ce point. Etes-vous cependant réellement conscient de la pollution numérique que génère votre site?                        
                         </p>
                     </div>
             

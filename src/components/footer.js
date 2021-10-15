@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faFacebookSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import "../style/footer.css"
-import Logofooter from "../images/logoFooter.svg"
+// import Logofooter from "../images/logoFooter.svg"
 
 
 export default function Footer() {
@@ -30,12 +30,12 @@ export default function Footer() {
 
             </div>
             <p id="cpyright">
-                 IKISQUARE Web Agency &copy; <span className="copyright-annee">2021</span>
+                 <span>IKISQUARE 2021 &copy;</span> <span className="copyright-annee"> All Rights Reserved </span>
             </p>
 
             <nav id="footerNavIcons">
-                    <Link to="https://www.linkedin.com/company/ikisquare" > <FontAwesomeIcon className="footerNavIcons" icon={faLinkedin} /></Link>
-                    <Link to="https://www.facebook.com/IKISQUAREAgency/" > <FontAwesomeIcon className="footerNavIcons" icon={faFacebook} /></Link>
+                    {/* <Link to="https://www.linkedin.com/company/ikisquare" > <FontAwesomeIcon className="footerNavIcons" icon={faLinkedin} /></Link>
+                    <Link to="https://www.facebook.com/IKISQUAREAgency/" > <FontAwesomeIcon className="footerNavIcons" icon={faFacebookSquare} /></Link> */}
             </nav>
         </div>
     </footer>
