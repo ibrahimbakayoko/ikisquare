@@ -13,6 +13,7 @@ import * as React from "react"
 import Footer from "./footer"
 import Header from "./header"
 import "../style/stlye.css"
+import Seo from "./seo"
 
 /* import Landingpage from "./Landing-page"
  */
@@ -21,6 +22,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Seo/>
       <Header  />
 {/*       <div className="landingPage">
          <Landingpage/>

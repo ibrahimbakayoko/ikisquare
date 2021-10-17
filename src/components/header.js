@@ -77,11 +77,11 @@ export default function Header() {
             <FontAwesomeIcon icon={faTimes} onClick={close} className="closeMenu" size="3x" />
             {/* <Link to="/blog" className="navLinks" onClick={close} >Blog</Link> */}
             <Link to="/#page-accueil" className="navLinks" onClick={close} >Accueil</Link>
-            <Link to="/#apropos-page" className="navLinks" onClick={close}><p>A propos</p> </Link>
+            <Link to="/#apropos-page" className="navLinks" onClick={close}>A propos </Link>
             <Link to="/#services-page" className="navLinks" onClick={close}>Services</Link>
             <Link to="/#contact-page" className="navLinks" onClick={close} >Contact</Link>
             <Link to="https://www.linkedin.com/company/ikisquare" > <FontAwesomeIcon className="footerNavIcons" icon={faLinkedin} /></Link>
-                    <Link to="https://www.facebook.com/IKISQUAREAgency/" > <FontAwesomeIcon className="footerNavIcons" icon={faFacebookSquare} /></Link>
+            <Link to="https://www.facebook.com/IKISQUAREAgency/" > <FontAwesomeIcon className="footerNavIcons" icon={faFacebookSquare} /></Link>
 
           </nav>
         </div>

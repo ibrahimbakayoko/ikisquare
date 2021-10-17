@@ -36,7 +36,7 @@ export default function Contact() {
         <div className="contact-calltoaction">
              <div className="banner-inner">
                 <div className="calltoaction-title">
-                    <h1> L' éco-conception est au centre de nos valeurs</h1>
+                    <h1> L' éco-conception est au centre de nos valeurs. </h1>
                 </div>
                 {/* <div className="calltoaction-content">Vous avez un projet ? N'attendez plus, parlons en !</div> */}
 
