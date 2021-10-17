@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: '/iki-war',
   siteMetadata: {
-    title: `ikisquare - Agence de développement web`,
+    title: `ikisquare | Agence de développement web`,
     description: `Agence web liégeoise spécialisée dans l'éco-conception de solutions numériques.`,
     url: `https://ikisquare.com`, // No trailing slash allowed!
     image: "/images/snape.jpg", // Path to your image you placed in the 'static' folder
