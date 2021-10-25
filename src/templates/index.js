@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import Layout from "../components/layout"
-//import SingleListedArticle from "../components/SingleListedArticle"
-/*
+import SingleListedArticle from "../components/SingleListedArticle"
+
 const NavLink = props => {
   if (!props.test) {
     return <Link to={props.url}>{props.text}</Link>
@@ -17,28 +17,47 @@ const IndexPage = ({ pageContext }) => {
   const previousUrl = index - 1 == 1 ? '/blog' : pathPrefix+(index - 1).toString()
   const nextUrl = pathPrefix + (index + 1).toString()
   const strapiPathPrefix = "http://localhost:1337"
+
+  let article_date;
+  let date_day ; 
+  let date_month ; 
+  let date_year ;
   return (
     <Layout>
-      <h4>{pageCount} Pages</h4>
-
-      {group.map(({ node }) => (
-       
-        <SingleListedArticle
-          articleUrl={"/"+node.articleTitle.replace(/\s/g,'-')}
-          articleTitle={node.articleTitle}
-          articleImgSrc={strapiPathPrefix + node.articleImages.url}
-          publishedBy={node.article_publisher.publisher_name}
-          publishedImgSrc={strapiPathPrefix + node.article_publisher.publisher_img.url}
-        />
-          
-      ))}
-      <div className="previousLink">
-        <NavLink test={first} url={previousUrl} text="Go to Previous Page" />
+      <div id="blogHeader" >
+        <p>
+          Blog
+        </p>
       </div>
-      <div className="nextLink">
-        <NavLink test={last} url={nextUrl} text="Go to Next Page" />
+      <div id="blog-big-container">
+          <div id="blog-container">
+              {group.map(({ node }) => (
+                 <>
+             
+                
+                <SingleListedArticle
+                  articleUrl={"/"+node.articleTitle.replace(/\s/g,'-').replace(/\?/g,'')}
+                  articleTitle={node.articleTitle}
+                  articleImgSrc={strapiPathPrefix + node.articleImages./*formats.small.*/url}
+                  articleBriefDesc={ node.articleContent}
+                  articlePublishedDate = {new Date(node.published_at)}
+                  publishedBy={node.users_permissions_user.username}
+                  publishedImgSrc={strapiPathPrefix + node.users_permissions_user.user_img.url}
+                />
+                </>
+              ))}
+<div id="blog-buttons">
+
+              <div className="previousLink">
+                  <NavLink test={first} url={previousUrl} text="Page suivante" />
+              </div>
+              <div className="nextLink">
+                  <NavLink test={last} url={nextUrl} text="Page précédente" />
+              </div>
+          </div>
+          </div>
       </div>
     </Layout>
   )
 }
-export default IndexPage*/
+export default IndexPage

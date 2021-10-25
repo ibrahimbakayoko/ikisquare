@@ -57,7 +57,7 @@ export default function Header() {
 
         <div id="Header-container">
           <div id="HeaderLogo">
-            <Link to="#page-accueil"  >
+            <Link to="/#page-accueil"  >
               {/*                <StaticImage src="../images/logo.svg" alt="" />    */} 
              
                
