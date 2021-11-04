@@ -106,6 +106,7 @@ box-sizing: border-box;
     padding : 10px 0px 10px 20px
 }
 .articleHeaderParagrahpe{
+    white-space: normal !important;
     color: #007A7A;
     font-size: 17px;
     font-style: italic;
