@@ -54,7 +54,7 @@
   border-bottom: 2px solid #fff;
 } */
 .contact-calltoaction{
-  background-image: url('../images/banner-img.svgz');
+  background-image: url('../images/banner-img.svgz');/*ss*/
   background-size: cover;
   background-position: center center;
   height: 300px;
