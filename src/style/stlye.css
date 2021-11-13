@@ -54,7 +54,11 @@
   border-bottom: 2px solid #fff;
 } */
 .contact-calltoaction{
+<<<<<<< HEAD
   background-image: url('../images/banner-img.svgz');/*ss*/
+=======
+  background-image: url('../images/banner-img.jpg');
+>>>>>>> parent of 4492855 (update)
   background-size: cover;
   background-position: center center;
   height: 300px;
