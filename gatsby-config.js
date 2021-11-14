@@ -1,10 +1,11 @@
 module.exports = {
-  pathPrefix: '/iki-war',
+  //pathPrefix: '/iki-war',
   siteMetadata: {
     title: `ikisquare | Agence de développement web`,
     description: `Agence web liégeoise spécialisée dans l'éco-conception de solutions numériques.`,
     url: `https://ikisquare.com`, // No trailing slash allowed!
-    image: "/images/snape.jpg", // Path to your image you placed in the 'static' folder
+    //image: "/images/snape.jpg", // Path to your image you placed in the 'static' folder
+    image: "/images/snapes.svg", // Path to your image you placed in the 'static' folder
     author: `@ikisquare`,
    // siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
