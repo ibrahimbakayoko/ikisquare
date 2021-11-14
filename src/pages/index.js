@@ -21,15 +21,15 @@ export default function index() {
 
     return (
         <>
-                <div className="sections-title">Hello again from IKISQUARE !</div>
-
-     {/*  <Layout>
+{/*                 <div className="sections-title">Hello again from IKISQUARE !</div>
+ */}
+      <Layout>
         <Landingpage/>
             <Apropos/>
             <Services/>
 
             <Contact/>
-        </Layout> */}
+        </Layout> 
            
         </>
     )
