@@ -390,6 +390,15 @@ margin-left: 2%;
   display: none !important;
 }
 
+/* print css sheet  */
+@media print{
+  /* HIDE ELEMENT */
+  .contact-calltoaction {
+    display: none;
+  }
+  
+}
+/* end print css sheet */
 
 @media only screen and (min-width: 930px){
 header #Header-container #HeaderNavLinks {
@@ -895,7 +904,7 @@ margin-bottom: 0;
  #contact-form-container div {
    margin-right: 40px;
  }
-  @media only screen and (max-width: 930px){
+@media only screen and (max-width: 930px){
     #contact-form-container div {
       margin-right: 0px !important;
     }
