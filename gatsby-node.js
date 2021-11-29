@@ -9,17 +9,16 @@
         allStrapiArticles(sort: {order: ASC, fields: published_at}) {
           edges {
             node {
+              publisher {
+                publisher_img {
+                  url
+                }
+                username
+              }
               articleTitle
               articleContent
               articleImages {
                 url
-              }
-              published_at
-              article_publisher {
-                publisher_name
-                publisher_img {
-                  url
-                }
               }
             }
           }

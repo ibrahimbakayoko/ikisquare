@@ -27,8 +27,8 @@ const IndexPage = ({ pageContext }) => {
           articleUrl={"/"+node.articleTitle.replace(/\s/g,'-')}
           articleTitle={node.articleTitle}
           articleImgSrc={strapiPathPrefix + node.articleImages.url}
-          publishedBy={node.article_publisher.publisher_name}
-          publishedImgSrc={strapiPathPrefix + node.article_publisher.publisher_img.url}
+          publishedBy={node.publisher.username}
+          publishedImgSrc={strapiPathPrefix + node.publisher.publisher_img.url}
         />
           
       ))}
